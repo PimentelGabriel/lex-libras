@@ -1,0 +1,1 @@
+from tradutor.functions.graph_morph_changer import graphMorphChanger
