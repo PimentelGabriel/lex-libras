@@ -1,0 +1,8 @@
+https://www.todamateria.com.br/lingua-portuguesa/morfologia/
+
+https://www.todamateria.com.br/funcao-sintatica/
+
+
+Material de refêrencia
+----- Find a synonyng word using ntlk
+https://www.holisticseo.digital/python-seo/nltk/wordnet
