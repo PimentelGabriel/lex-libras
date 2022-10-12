@@ -3,7 +3,7 @@ Por: Gabriel Pimentel de Castro Costa
 
 ## Passos
 
-### Tradutor da palavra correspondete
+### Tradutor da palavra correspondente
 Apesas de ser como um subgrupo de regras do PT-br, a LIBRAS tem suas particularidades não presente no PT-br por isso muitas palavras que há em PT-br não exsite em LIBRAS. Para isso devemos procurar um sinôonimo ou palavra correlacionada.
 
 * Usar a biblioteca do NLTK para verificar isso por meio de similaridade de vetores representantes de palavras
