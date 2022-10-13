@@ -3,7 +3,7 @@ class GraphMorphChanger:
     # @staticmethod
     def analisar(self, Doc):
         # Passa em cada token para analisar sua grafia e
-        # assim fazer as alterações para GLosa LIBRAS
+        # assim fazer as alterações para Glosa LIBRAS
         for token in Doc:
             print(token.pos_)
             # Pronomes
@@ -18,6 +18,11 @@ class GraphMorphChanger:
             # Verbos
             elif token.pos_.startswith("VERB"):
                 token._.metaDados["clasePalavra"] = token.dep_
+
+            # Auxiliar
+            elif token.pos_.startswith("AUX"):
+                token._.metaDados["palavra"] = token.text.upper()
+
 
     def __enter__(self):
         return self
