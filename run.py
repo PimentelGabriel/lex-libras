@@ -6,10 +6,13 @@ from lex_libras.engine import TradutorLexLibras
 
 tradutorLexLibras = TradutorLexLibras()
 
-tradutorLexLibras.traduzir("Vamos combater dangue")
+tradutorLexLibras.traduzir("Vamos combater dangue, ele vai morrer")
 
 print(tradutorLexLibras.glosaVlibras)
 print(tradutorLexLibras.docSpaCy)
+
+for w in tradutorLexLibras.docSpaCy:
+    print(w._.metaDados['palavra'])
 # repo = DictionaryRepository()
 # data = repo.select()
 

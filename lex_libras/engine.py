@@ -1,6 +1,6 @@
 import spacy
-from spacy.tokens import Token
-from spacy.doc import Doc
+from spacy.tokens import Doc, Token
+# from spacy.tokens import 
 
 # Meta dados sobre a frase
 Doc.set_extension("tipo_frase", default=0)
@@ -13,13 +13,13 @@ DEVE SER MELHOR IMPLEMENTADO
 '''
 
 # Meta dado de todos os token para dizer que a palavra é traduzida e usada na glosa Libras
-Token.set_extension("eh_corresponde", defalt=False)
+Token.set_extension("eh_corresponde", default=False)
 
 # Meta dados da palavra, como por exemplo a forma em glosa
 # Ex.:  PT-br               Glosa LIBRAS
 #       ELES DERAM PRA ELA  EL@S 3pDAR3s EL@
 #
-Token.set_extension("metaDados", defalt={
+Token.set_extension("metaDados", default={
     "palavra": None,
     "clasePalavra": None,
     "ordem": None
@@ -28,9 +28,9 @@ Token.set_extension("metaDados", defalt={
 
 nlp = spacy.load("pt_core_news_lg")
 
-# from functions.core_translater import coreTranslater
-from functions.graph_morph_changer.GraphMorphChanger import GraphMorphChanger
-# from functions.sintatic_organizer import sintaticOrganizer
+# from .functions.core_translater import coreTranslater
+from .functions.graph_morph_changer.GraphMorphChanger import GraphMorphChanger
+# from .functions.sintatic_organizer import sintaticOrganizer
 
 import vlibras_translate
 vlibras_tradutor = vlibras_translate.translation.Translation()
@@ -47,16 +47,32 @@ class TradutorLexLibras:
         self.glosaVlibras = vlibras_tradutor.rule_translation(text)
         self.docSpaCy = nlp(text)
 
+        self.__graph_morph_changer()
+        self.__printMetaData()
+
+        self.__core_translater()
+        self.__printMetaData()
+        
+        self.__sintatic_organizer()
+        self.__printMetaData()
+
     def __graph_morph_changer(self):
         print("__graph_morph_changer not implemented yet")
-        graphMorphChanger(self.docSpaCy)
-        print(self.docSpaCy[0].metaDados)
+        # graphMorphChanger = GraphMorphChanger()
+        with GraphMorphChanger() as graphMorphChanger: 
+            graphMorphChanger.analisar(self.docSpaCy)
+    
+        print(self.docSpaCy[0]._.metaDados)
 
-    def __core_translater(sefl):
+    def __core_translater(self):
         print("__core_translater not implemented yet")
 
     def __sintatic_organizer(self):
         print("__core_translater not implemented yet")
+
+    def __printMetaData(self):
+        for token in self.docSpaCy:
+            print(token._.metaDados['palavra'])
         
 
     # def __init__(self):
