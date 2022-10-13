@@ -1,38 +1,38 @@
-CREATE DATABASE `LEX_LIBRAS`
-/*!40100 DEFAULT CHARACTER SET utf8mb4 collate_utf8mb4_general-ci */
-CREATE TABLE
-  dictionary (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    word VARCHAR(50),
-    id_class_word INT,
-    path_video VARCHAR(255),
-    FOREIGN KEY (id_class_word) REFERENCES class_word(id_class) ON DELETE RESTRICT ON UPDATE CASCADE
-  );
+CREATE TABLE `classes_gramaticais` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(20) NOT NULL,
+  `descricao` varchar(225) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
--- DADOS DE TESTE ----
-INSERT INTO
-  dictionary(word, id_class_word, path_video)
-VALUES
-  ('IR', 1, 'http://'),
-  ('VENCER', 1, 'http://'),
-  ('MOSQUITO', 2, 'http://');
+
+CREATE TABLE `assuntos` (
+    `id` TINYINT UNSIGNED PRIMARY KEY,
+    `nome` VARCHAR(50) NOT NULL
+);
 
 
-CREATE TABLE
-  class_word (
-    id_class INT PRIMARY KEY AUTO_INCREMENT,
-    name_class VARCHAR(20) NOT NULL,
-    desc_class VARCHAR(225)
-  );
 
-
-INSERT INTO
-  class_word(name_class, desc_class) VALUE(
-    "VERB-CONJU",
-    "Verbo que sobre conjugação quanto a pessoa, tanto no sujeito como no objeto"
-  );
-
-
-INSERT INTO
-  class_word(name_class, desc_class) VALUE("SUBSTANTIVO", "Substantivo simples");
+CREATE TABLE `palavras` (
+    `id` INT UNSIGNED,
+    `ident` SMALLINT UNSIGNED,
+    `letra` char(1),
+    `palavra` varchar(50) NOT NULL,
+    `descricao` text,
+    `exemplo_glosalibras` text,
+    `exemplo_ptbr` text,
+    `assunto` tinyint UNSIGNED,
+    `mao` tinyint UNSIGNED,
+    `video_url` varchar(50),
+    `video_ines` varchar(50),
+    `image_ines` varchar(50),
+    `classe_gramatical` int(11),
+    `origem` tinyint UNSIGNED,
+    `status` tinyint UNSIGNED,
+    PRIMARY KEY (`id`),
+    INDEX (`palavra`),
+    KEY `classe_gramatical` (`classe_gramatical`),
+    CONSTRAINT `classe_gramatical_fk_1` FOREIGN KEY (`classe_gramatical`) REFERENCES `classes_gramaticais` (`id`) ON UPDATE CASCADE ON DELETE RESTRICT,
+    CONSTRAINT `assunto_fk_2` FOREIGN KEY (`assunto`) REFERENCES `assuntos` (`id`) ON UPDATE CASCADE ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
