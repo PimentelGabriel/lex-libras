@@ -6,7 +6,7 @@ from lex_libras.engine import TradutorLexLibras
 
 tradutorLexLibras = TradutorLexLibras()
 
-tradutorLexLibras.traduzir("Vamos combater dangue, ele vai morrer")
+tradutorLexLibras.traduzir("Vamos vencer a danguer")
 
 print(tradutorLexLibras.glosaVlibras)
 print(tradutorLexLibras.docSpaCy)

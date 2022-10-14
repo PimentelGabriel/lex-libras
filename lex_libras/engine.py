@@ -21,7 +21,7 @@ Token.set_extension("eh_corresponde", default=False)
 #
 Token.set_extension("metaDados", default={
     "palavra": None,
-    "clasePalavra": None,
+    "claseGramatical": None,
     "ordem": None
     }
 )
@@ -44,14 +44,15 @@ class TradutorLexLibras:
     glosa = ""
 
     def traduzir(self, text):
-        self.glosaVlibras = vlibras_tradutor.rule_translation(text)
+        #self.glosaVlibras = vlibras_tradutor.rule_translation(text)
         self.docSpaCy = nlp(text)
+
+        self.__core_translater()
+        self.__printMetaData()
 
         self.__graph_morph_changer()
         self.__printMetaData()
 
-        self.__core_translater()
-        self.__printMetaData()
         
         self.__sintatic_organizer()
         self.__printMetaData()
