@@ -28,7 +28,10 @@ MÉDICO.
 5. Tudo que acumule água
 
 TUDO ÁGUA DENTRO.
- 
+
+▲▲▲ 
+OBS.: PROFESSOR, ESSE NÍVEL DE TRADUÇÃO, I.E. POR SUBSTITUIÇÃO DE PALAVRAS SEMANTICAMENTE SIMILARES, EU ACREDITO QUE SÓ PODE SER OBTIDO POR INTELIGÊNCIA ARTIFICIAL, POR CONTA DA BAIXA QUANTIDADE DE DADOS NÃO POSSIVEL FAZER ESSA TRADUÇÃO A NÃO SER QUE A GENTE ADICIONE MANUALMENTE NO CÓDIGO (HARD-CODED) 
+
 
 6. Se você tiver febre alta, dores musculares, de cabeça, nos joelhos,
 cotovelos e mal estar em geral... procure serviços médicos
