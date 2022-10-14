@@ -1,6 +1,7 @@
 CREATE TABLE `classes_gramaticais` (
   `id` int(11) NOT NULL,
   `nome` varchar(20) NOT NULL,
+  `flag` varchar(15) NOT NULL,
   `descricao` varchar(225) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
