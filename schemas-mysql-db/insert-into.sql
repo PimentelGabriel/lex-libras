@@ -1,23 +1,27 @@
 -- INSERTO INTO classes_gramaticais 
-INSERT INTO classes_gramaticais(id, nome, descricao) value(5, 'ADJ./SUBST.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(2, 'ADJETIVO', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(6, 'ADV.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(17, 'CONJ.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(14, 'CONJ. CONDICIONAL', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(18, 'CONTR.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(4, 'INTERJ.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(20, 'LOC. CONJ.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(13, 'LOC. SUBST.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(19, 'LOC.ADV.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(16, 'LOC.VERB.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(10, 'NUM.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(8, 'PREP.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(11, 'PRON. INDEFIN.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(12, 'PRON. POSS.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(7, 'PRONOME', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(15, 'SUBST./ADJ.', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(1, 'SUBSTANTIVO', '');
-INSERT INTO classes_gramaticais(id, nome, descricao) value(3, 'VERBO', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(5, 'ADJ./SUBST.', '', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(2, 'ADJETIVO', 'ADJ', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(6, 'ADVÉRBIO', 'ADV', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(17, 'CONJ.', '', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(14, 'CONJ. CONDICIONAL', '', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(18, 'CONTR.', '', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(4, 'INTERJ.', '', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(20, 'LOC. CONJ.', '', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(13, 'LOC. SUBST.', '', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(19, 'LOC.ADV.', '', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(16, 'LOC.VERB.', '', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(10, 'NUMERAL', 'NUM', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(8, 'PREP.', '', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(11, 'PRON. INDEFIN.', '', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(12, 'PRON. POSS.', '', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(7, 'PRONOME', '', 'PRON');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(15, 'SUBST./ADJ.', '', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(1, 'SUBSTANTIVO', 'NOUNB', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(3, 'VERBO', 'VERB', '');
+
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(30, 'VERBO', 'VERB-P', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(31, 'VERBO', 'VERB-G', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(32, 'VERBO', 'VERB-L', '');
 
 -- INSERT INTO assuntos
 INSERT INTO assuntos(id, nome) value(31, 'ALIMENTO/BEBIDA');
