@@ -6,6 +6,9 @@ Por: Gabriel Pimentel de Castro Costa
 ### Tradutor da palavra correspondente
 Apesas de ser como um subgrupo de regras do PT-br, a LIBRAS tem suas particularidades não presente no PT-br por isso muitas palavras que há em PT-br não exsite em LIBRAS. Para isso devemos procurar um sinôonimo ou palavra correlacionada.
 
+Confimar essa informação:
+Em libras não existe as artigos, preposições e conjunções 
+
 * Usar a biblioteca do NLTK para verificar isso por meio de similaridade de vetores representantes de palavras
 
 ```
