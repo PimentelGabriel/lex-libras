@@ -26,6 +26,13 @@ class DictionaryRepository:
             else:       
                 palavrasCandidatas += f', \'{palavra}\''
 
-        F'SELECT distinct(palavra) FROM palavras WHERE palavra IN ({palavrasCandidatas})'
+        # print(f'SELECT distinct(palavra) FROM palavras WHERE palavra IN ({palavrasCandidatas})');
+        print(palavrasCandidatas)
 
-        SELECT distinct(palavra) FROM palavras WHERE palavra IN ('IR', 'PARA', 'O', 'PRAIA')
+        with DBConnectionHandler() as conn:
+            resp = conn.runSQLRaw("SELECT p.id, p.palavra, c.nome FROM palavras AS p, classes_gramaticais AS c IN (:lemmas);", ({"lemmas": palavrasCandidatas}))
+            self.lastResult = resp
+            for row in resp:
+                print(row)
+
+        # SELECT distinct(palavra) FROM palavras WHERE palavra IN ('IR', 'PARA', 'O', 'PRAIA')
