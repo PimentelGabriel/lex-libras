@@ -1,1 +1,0 @@
-print("sintaticOrganizer called")
