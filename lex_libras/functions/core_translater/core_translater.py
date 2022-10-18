@@ -1,8 +1,6 @@
 from db.repository.dictionary_repository import DictionaryRepository
 
-from .functions.removeArt import removeArt
-from .functions.removeConj import removeConj
-from .functions.removeAdp import removeAdp
+from .functions import *
 
 class CoreTranslater:
     lastQueryResult = None
@@ -21,7 +19,8 @@ class CoreTranslater:
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        print("Tchau")
+        None
+        #print("Tchau")
 
     @staticmethod
     def returnPalavraElegida(Doc):
@@ -43,15 +42,16 @@ class CoreTranslater:
             token._.metaDados['palavra'] = token.lemma_.upper()
             token._.metaDados['claseGramatical'] = token.pos_
 
-        print("For lemmas\n")
-        for token in Doc:
-            print(token._.metaDados['palavra'])
-            print(token._.eh_corresponde)
-            print("-----")
+        # print("For lemmas\n")
+        # for token in Doc:
+        #     print(token._.metaDados['palavra'])
+        #     print(token._.eh_corresponde)
+        #     print("-----")
 
-        print("\n\n#lemmas")
-        print(CoreTranslater.returnPalavraElegida(Doc))
-        print("#fim lemmas")
+        # print("\n\n#lemmas")
+        # print(CoreTranslater.returnPalavraElegida(Doc))
+        # print("#fim lemmas")
+
         # Buscar no banco se há sinal correspondente as palavras recebidas e lematizadas
         # Fazer uam raw query no SQLAlchemy usando o statment 'where palavra in (lemas[0], lemas[1], lemas[2], lemas[3])'
         # dictionary.selectPalavras(lemas)

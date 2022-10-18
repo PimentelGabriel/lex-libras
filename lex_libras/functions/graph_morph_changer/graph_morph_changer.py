@@ -5,10 +5,10 @@ class GraphMorphChanger:
         # Passa em cada token para analisar sua grafia e
         # assim fazer as alterações para Glosa LIBRAS
         for token in Doc:
-            print(token.pos_)
+        #     print(token.pos_)
             # Pronomes
             if token.pos_.startswith("PRON"):
-                print("Pronound fonud")
+                # print("Pronound fonud")
                 if token.text.upper() in ('ELE', 'ELA'):
                     token._.metaDados["palavra"] = "EL@"
                 elif token.text.upper() in ('ELES', 'ELAS'):
@@ -28,4 +28,5 @@ class GraphMorphChanger:
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        print("Tchau")
+        None
+        # print("Tchau")

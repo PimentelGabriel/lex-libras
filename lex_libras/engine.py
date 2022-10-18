@@ -28,8 +28,9 @@ Token.set_extension("metaDados", default={
 
 nlp = spacy.load("pt_core_news_lg")
 
-from .functions.core_translater.CoreTranslater import CoreTranslater
-from .functions.graph_morph_changer.GraphMorphChanger import GraphMorphChanger
+from .functions.core_translater import CoreTranslater
+from .functions.graph_morph_changer import GraphMorphChanger
+
 # from .functions.sintatic_organizer import sintaticOrganizer
 
 import vlibras_translate
@@ -67,15 +68,17 @@ class TradutorLexLibras:
         # graphMorphChanger = GraphMorphChanger()
         with GraphMorphChanger() as graphMorphChanger: 
             graphMorphChanger.analisar(self.docSpaCy)
-    
-        print(self.docSpaCy[0]._.metaDados)
 
     def __sintatic_organizer(self):
-        print("__core_translater not implemented yet")
+        print("__sintatic_organizer not implemented yet")
 
     def __printMetaData(self):
+        selected = []
         for token in self.docSpaCy:
-            print(token._.metaDados['palavra'])
+            if token._.eh_corresponde:
+                selected.append(token._.metaDados['palavra'])
+
+        print(selected)
         
 
     # def __init__(self):
