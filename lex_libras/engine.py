@@ -22,7 +22,8 @@ Token.set_extension("eh_corresponde", default=False)
 Token.set_extension("metaDados", default={
     "palavra": None,
     "claseGramatical": None,
-    "ordem": None
+    "ordem": None,
+    "existeSinalLibras": False
     }
 )
 
@@ -74,11 +75,14 @@ class TradutorLexLibras:
 
     def __printMetaData(self):
         selected = []
+        flags = []
         for token in self.docSpaCy:
             if token._.eh_corresponde:
                 selected.append(token._.metaDados['palavra'])
+                flags.append(token._.metaDados['existeSinalLibras'])
 
         print(selected)
+        print(flags)
         
 
     # def __init__(self):
