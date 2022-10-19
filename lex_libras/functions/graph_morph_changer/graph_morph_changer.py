@@ -16,14 +16,14 @@ class GraphMorphChanger:
                 elif token.text.upper() in ('ELES', 'ELAS'):
                     token._.metaDados["palavra"] = "EL@S"
                 else:
-                    token._.metaDados["palavra"] = token.text.upper()
+                    token._.metaDados["palavra"] = token.lemma_.upper()
             # Verbos
             elif token.pos_.startswith("VERB"):
                 analisarVerbo(token, Doc)
 
             # Auxiliar
             elif token.pos_.startswith("AUX"):
-                token._.metaDados["palavra"] = token.text.upper()
+                token._.metaDados["palavra"] = token.lemma_.upper()
 
 
     def __enter__(self):

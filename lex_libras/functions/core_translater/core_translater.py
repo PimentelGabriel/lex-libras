@@ -80,3 +80,15 @@ class CoreTranslater:
                 if palavra['palavra'] == token._.metaDados['palavra']:
                     token._.metaDados['existeSinalLibras'] = True
                     token._.metaDados['claseGramatical'] = palavra['flag']
+
+        #FAZENDO DATILOLOGIA
+        for token in Doc:
+            if not token._.metaDados['existeSinalLibras']:
+                print(token._.metaDados["palavra"])
+                datilologiaP = ""
+                for l in token._.metaDados['palavra']:
+                    if token._.metaDados['palavra'].index(l) == 0:
+                        datilologiaP = l
+                    else: 
+                        datilologiaP += "-"+l
+                token._.metaDados["palavra"] = datilologiaP
