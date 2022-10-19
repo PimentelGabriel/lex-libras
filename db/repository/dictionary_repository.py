@@ -39,10 +39,10 @@ class DictionaryRepository:
             try:
                 resp = conn.runSQLRaw(query)
                 self.lastResult = resp
-                print(query)
+                # print(query)
 
-                for r in resp:
-                    print(r)
+                # for r in resp:
+                #     print(r)
 
     
             except Exception as e:
