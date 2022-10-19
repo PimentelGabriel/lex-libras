@@ -19,14 +19,25 @@ class DBConnectionHandler():
     def __get_engine(self):
         return self.__engine
 
-    def runSQLRaw(self, query, data=[{}]):
+    def runSQLRaw(self, query, data=[{"index": "index"}]):
         eng = self.__get_engine()
         conn = eng.connect()
         
+        # return conn.execute("SELECT palavra FROM palavras LIMIT 3;")
+        
         statement = text(query)
 
-        for line in data:
-            return conn.execute(statement, **line)
+        if data[0]["index"] == "index":
+            # print("1º execute")
+            return conn.execute(query)
+        else:
+            # print("2º execute")
+            result = []
+            for line in data:
+                # print("Exeted")
+                result.append(conn.execute(statement, **line))
+                
+            return result
 
     def __enter__(self):
         session_maker = sessionmaker(bind=self.__engine)
