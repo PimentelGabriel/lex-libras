@@ -48,13 +48,17 @@ class CoreTranslater:
         #     print(token._.eh_corresponde)
         #     print("-----")
 
-        # print("\n\n#lemmas")
-        # print(CoreTranslater.returnPalavraElegida(Doc))
-        # print("#fim lemmas")
+        print("\n\n#lemmas")
+        lemmas = CoreTranslater.returnPalavraElegida(Doc)
+        print(lemmas)
+        print("#fim lemmas")
 
         # Buscar no banco se há sinal correspondente as palavras recebidas e lematizadas
         # Fazer uam raw query no SQLAlchemy usando o statment 'where palavra in (lemas[0], lemas[1], lemas[2], lemas[3])'
-        # dictionary.selectPalavras(lemas)
+        
+        # dictionary.selectPalavras(lemas):
         
         # 
-        # self.__dictionaryRepository.selectPalavras(lemas)
+        print("Query from DB")
+        w = self.__dictionaryRepository.selectPalavras(lemmas)
+        print(w)
