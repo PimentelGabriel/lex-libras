@@ -53,6 +53,9 @@ class CoreTranslater:
         print(lemmas)
         print("#fim lemmas")
 
+
+        # ==================================================
+
         # Buscar no banco se há sinal correspondente as palavras recebidas e lematizadas
         # Fazer uam raw query no SQLAlchemy usando o statment 'where palavra in (lemas[0], lemas[1], lemas[2], lemas[3])'
         
@@ -60,5 +63,20 @@ class CoreTranslater:
         
         # 
         print("Query from DB")
-        w = self.__dictionaryRepository.selectPalavras(lemmas)
-        print(w)
+        palavrasDB = self.__dictionaryRepository.selectPalavras(lemmas)
+        
+        ArrayPalavras = []
+        try:
+            for p in palavrasDB:
+                ArrayPalavras.append(dict(p))
+        except Exception as e:
+            print(e)
+
+
+        print("\nArrayPalavras")
+        print(ArrayPalavras)
+        for palavra in ArrayPalavras:
+            for token in Doc:
+                if palavra['palavra'] == token._.metaDados['palavra']:
+                    token._.metaDados['existeSinalLibras'] = True
+                    token._.metaDados['claseGramatical'] = palavra['flag']
