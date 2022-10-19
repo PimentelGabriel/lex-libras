@@ -1,0 +1,1 @@
+from .analisarVerbo import analisarVerbo
