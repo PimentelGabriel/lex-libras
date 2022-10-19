@@ -1,3 +1,5 @@
+from .functions import *
+
 class GraphMorphChanger:
 
     # @staticmethod
@@ -17,7 +19,7 @@ class GraphMorphChanger:
                     token._.metaDados["palavra"] = token.text.upper()
             # Verbos
             elif token.pos_.startswith("VERB"):
-                token._.metaDados["clasePalavra"] = token.dep_
+                analisarVerbo(token, Doc)
 
             # Auxiliar
             elif token.pos_.startswith("AUX"):
