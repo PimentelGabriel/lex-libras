@@ -60,6 +60,12 @@ def analisarVerbo(token, Doc):
                             if c.morph.get('Number')[0] not in ("Sing", "Plur"):
                                 raise Exception(f"Número da palavra {c.text} não encontrada.\n\tA palavra deve ser um objeto, porém não possui\nNumber")
                             break
-    palavraGlosa =  token._.metaDados["verboData"]["pessoa"]+token._.metaDados["verboData"]["numero"]+token._.metaDados["palavra"]+token._.metaDados["verboData"]["obj"]["pessoa"]+token._.metaDados["verboData"]["obj"]["numero"]
 
-    token._.metaDados["palavra"] = palavraGlosa
+        palavraGlosa =  token._.metaDados["verboData"]["pessoa"]+token._.metaDados["verboData"]["numero"]+token._.metaDados["palavra"]+token._.metaDados["verboData"]["obj"]["pessoa"]+token._.metaDados["verboData"]["obj"]["numero"]
+        
+        token._.metaDados["palavra"] = palavraGlosa
+    
+    if token._.metaDados["claseGramatical"] == 'VERB-G':
+        raise Exception('Tratativa para os verbos que são conjugado pelo gênero (VERB-G) não implementado')
+    if token._.metaDados["claseGramatical"] == 'VERB-L':
+        raise Exception('Tratativa para os verbos que são conjugado pelo locativo (VERB-L) não implementado')
