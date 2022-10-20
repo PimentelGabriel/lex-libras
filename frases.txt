@@ -13,6 +13,10 @@ MOSQUITO VIR 1pVENCER2s
 
 ENTÃO POR-ISSO CAIXA PRECISAR objeto-plano-vertical TAMPAR
 
+    Glosa padronizada
+        Por isso temos que manter a caixa d'agua fechada!
+        ENTÃO POR-ISSO CAIXA PRECISAR CL <TAMPAR-CAIXA>
+
 4. Tomar cuidado com vasos...garrafas...latas.. pneus velhos!
 Tomar cuidado com vasos, garrafas, latas e pneus velhos!
 

@@ -6,7 +6,21 @@ from lex_libras.engine import TradutorLexLibras
 
 tradutorLexLibras = TradutorLexLibras()
 
-tradutorLexLibras.traduzir("Vamos vencer a dengue com um baixolão")
+# f1 = tradutorLexLibras.traduzir("Vamos vencer a dengue com um baixolão")
+# f1 = tradutorLexLibras.traduzir("Vamos vencer a dengue!")
+
+# into = "Vamos vencer a dengue!"
+# glosa = "MOSQUITO VIR 1pVENCER2s"
+# f1 = tradutorLexLibras.traduzir(into)
+
+into = "O mosquito da dengue nasce e se desenvolve em água parada!"
+glosa = "ÁGUA LARGAD@ MOSQUITO SURGIR DESENVOLVER"
+f1 = tradutorLexLibras.traduzir(into)
+
+print("\n\n\n\n")
+print("[ENTRADA]: "+into)
+print("[ESPERAD]: "+glosa)
+print("[SAIDA-L]: "+f1)
 
 # print(tradutorLexLibras.glosaVlibras)
 # print(tradutorLexLibras.docSpaCy)
