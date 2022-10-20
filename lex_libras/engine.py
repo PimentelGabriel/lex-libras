@@ -44,6 +44,7 @@ class TradutorLexLibras:
     glosaVlibras = ""
     docSpaCy = ""
     glosa = ""
+    selected = ""
 
     def traduzir(self, text):
         #self.glosaVlibras = vlibras_tradutor.rule_translation(text)
@@ -59,6 +60,8 @@ class TradutorLexLibras:
         self.__sintatic_organizer()
         self.__printMetaData()
 
+        return self.__getGlosa()
+
     def __core_translater(self):
         print("__core_translater is in implementation state")
         with CoreTranslater() as coreTranslater:
@@ -72,16 +75,31 @@ class TradutorLexLibras:
 
     def __sintatic_organizer(self):
         print("__sintatic_organizer not implemented yet")
+    
+    def __getGlosa(self):
+        glosa = ""
+        firstPass = True
+        for w in self.docSpaCy:
+            if w._.eh_corresponde:
+                if w.i == 0 or firstPass:
+                    glosa = w._.metaDados["palavra"]
+                    firstPass = False
+                elif w.pos_ == 'PUNCT':
+                    glosa += w._.metaDados["palavra"]
+                else:
+                    glosa += " "+w._.metaDados["palavra"]
+
+        return glosa
 
     def __printMetaData(self):
-        selected = []
+        self.selected = []
         flags = []
         for token in self.docSpaCy:
             if token._.eh_corresponde:
-                selected.append(token._.metaDados['palavra'])
+                self.selected.append(token._.metaDados['palavra'])
                 flags.append(token._.metaDados['existeSinalLibras'])
 
-        print(selected)
+        print(self.selected)
         print(flags)
         
 
