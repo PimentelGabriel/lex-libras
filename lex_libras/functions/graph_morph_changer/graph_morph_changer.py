@@ -25,6 +25,11 @@ class GraphMorphChanger:
             elif token.pos_.startswith("AUX"):
                 token._.metaDados["palavra"] = token.lemma_.upper()
 
+            # Adjetivos
+            # Para analisar os adjetivos devemos capturar os pronomes do qual omesmo se refere
+            elif token.pos_ == "NOUN" or token.pos_ == "PROPN" or token.pos_ == "PRON":
+                analisarAdjetivo(token, Doc)
+
 
     def __enter__(self):
         return self
