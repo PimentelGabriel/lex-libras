@@ -16,7 +16,7 @@ INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(11, 'PRON. INDE
 INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(12, 'PRON. POSS.', '', '');
 INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(7, 'PRONOME', '', 'PRON');
 INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(15, 'SUBST./ADJ.', '', '');
-INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(1, 'SUBSTANTIVO', 'NOUNB', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(1, 'SUBSTANTIVO', 'NOUN', '');
 INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(3, 'VERBO', 'VERB', '');
 
 INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(30, 'VERBO', 'VERB-P', '');
