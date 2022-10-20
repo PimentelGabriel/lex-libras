@@ -1,0 +1,30 @@
+Professor até aqui estive estudando a feramenta spaCy, na versão 3, ela é bem grande mas pude ter alguns resultados
+
+
+O algorítimo está gerando a seguinte saida pra primeira frase:
+
+[ENTRADA] PT-br:
+    Vamos combater a dengue!
+
+[SAÍDA] Glosa LIBRAS esperada
+    MOSQUITO VIR 1pVENCER2s
+
+[SAÍDA] Glosa LIBRAS retornada:
+    IR COMBATER DENGUE!
+
+Obs.: Professor eu usei como referência o dicionário online do INES, pra saber se uma palabra PT-br tem sinal correspondete em LIBRAS (algumas palavras não tem o vídeo do sinal)
+● A palavra 'combater' existe em libras, por isso o algorítimo não faz essa mudança da palavra
+● O INES não dar informação sobre o tipo de conjugação verbal em libras por isso tratei como se o verbo 'combater' não tivesse conjugação
+● Se o sr quiser a gente pode gerar a frase trocando o verbo "combater" para "vencer" porém essa troca não seria escalável, uma alternativa mais plausivel, pra mim, é mudar o verbo da frase inicial, em PT-br, de "combater" para "vencer"
+fazendo isso obtemos o seguinte resultado IR 1pVENCER3s DENGUE!
+● Quando a palavra 'vencer' é ultilizada o algorítimo gera a seguinte conjugação: 1sVENCER3s. Levei em consideração o fato de o objeto ser um substantivo próprio, por isso ele usa a 3 pessoa (3s) e não a segunda (2s), devo alterar isso?
+
+● Ainda não apliquei as regras de sintax, vou gerar automaticamente as outras frases pra poder enchergar um padrão plausivel
+
+IMPORTANTE
+● Acredito que não é possível gerar a frase 2 de maneira automáica e escalável de acorod com os exemplo que o sr espera, a frase LIBRAS gerada tem palavras que não existe na frase de entrada (e.g. LARGAD@) e palavras que estavam na frase de entrada foram excluida (e.g. dengue, parada) e palavras que existem no dicionário INES e não foi usada, por exemplo 'nasce', no caso foi alterada para 'SURGIR'.
+Assim como eu havia dito antes, tem como fazer algo hard-coded, i.e. regra específica pra cada frase, isso não seria escalável, dega-se de passagem a palavra dengue existe em libras e se refere à doença, seria uma frase extranha pra um surdo dizer "MOSQUITO DENGUE"?
+
+A frase 2:
+    PT-br: O mosquito da dengue nasce e se desenvolve em água parada!
+    LIBRAS esperada: ÁGUA LARGAD@ MOSQUITO SURGIR DESENVOLVER
