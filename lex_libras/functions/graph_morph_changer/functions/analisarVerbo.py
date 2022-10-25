@@ -68,4 +68,11 @@ def analisarVerbo(token, Doc):
     if token._.metaDados["claseGramatical"] == 'VERB-G':
         raise Exception('Tratativa para os verbos que são conjugado pelo gênero (VERB-G) não implementado')
     if token._.metaDados["claseGramatical"] == 'VERB-L':
-        raise Exception('Tratativa para os verbos que são conjugado pelo locativo (VERB-L) não implementado')
+        VERB_L_n_tratado = False
+        for c in token.children:
+            if c.pos_ in ("NOUN") and c.dep_ == "obj":
+                VERB_L_n_tratado = True
+                token._.metaDados["palavra"] = f"<{token._.metaDados['palavra']}-{c._.metaDados['palavra']}>"
+            
+        if not VERB_L_n_tratado:
+                raise Exception(f'O verbo {token.text} conjugado por locativo.\n\tTratativa para os verbos que são conjugado pelo locativo (VERB-L) não implementado')
