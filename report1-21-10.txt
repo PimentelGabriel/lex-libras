@@ -28,3 +28,17 @@ Assim como eu havia dito antes, tem como fazer algo hard-coded, i.e. regra espec
 A frase 2:
     PT-br: O mosquito da dengue nasce e se desenvolve em água parada!
     LIBRAS esperada: ÁGUA LARGAD@ MOSQUITO SURGIR DESENVOLVER
+
+
+EXECUÇÃO COM AS FRASES:
+Frase 1:
+[ENTRADA]: O mosquito da dengue nasce e se desenvolve em água parada!
+[ESPERAD]: ÁGUA LARGAD@ MOSQUITO SURGIR DESENVOLVER
+[SAIDA-L]: MOSQUITO DENGUE NASCER SE DESENVOLVER ÁGUA PARAD@!
+
+Frase 2:
+[ENTRADA]: Vamos vencer a dengue!
+[ESPERAD]: MOSQUITO VIR 1pVENCER2s
+[SAIDA-L]: IR 1pVENCER3s DENGUE!
+
+Obs.: AINDA NÃO IMPLEMENTEI A TRATATIVA COM VERBO CONJUGADO POR VOCATIVO

@@ -2,6 +2,8 @@ import spacy
 from spacy.tokens import Doc, Token
 # from spacy.tokens import 
 
+import re
+
 # Meta dados sobre a frase
 Doc.set_extension("tipo_frase", default=0)
 '''
@@ -81,13 +83,14 @@ class TradutorLexLibras:
         firstPass = True
         for w in self.docSpaCy:
             if w._.eh_corresponde:
+                w._.metaDados["palavra"] = re.sub("\s", "-", w._.metaDados["palavra"])
                 if w.i == 0 or firstPass:
                     glosa = w._.metaDados["palavra"]
                     firstPass = False
                 elif w.pos_ == 'PUNCT':
                     glosa += w._.metaDados["palavra"]
                 else:
-                    glosa += " "+w._.metaDados["palavra"]
+                    glosa += " " + w._.metaDados["palavra"]
 
         return glosa
 
