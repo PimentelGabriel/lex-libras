@@ -48,6 +48,11 @@ class CoreTranslater:
         #     print(token._.eh_corresponde)
         #     print("-----")
 
+        # Add função que monta as palavras compostas
+        # Palavras que em PT-br são duas porém em LIBRAS são representada como uma (no caso um sinal)
+        aglutinarPalavra(Doc)
+
+
         print("\n\n#lemmas")
         lemmas = CoreTranslater.returnPalavraElegida(Doc)
         print(lemmas)
