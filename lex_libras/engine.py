@@ -1,8 +1,12 @@
 import spacy
 from spacy.tokens import Doc, Token
+import os
 # from spacy.tokens import 
 
 import re
+
+#Setting if de execution is verbose
+verbose = False
 
 # Meta dados sobre a frase
 Doc.set_extension("tipo_frase", default=0)
@@ -43,6 +47,7 @@ vlibras_tradutor = vlibras_translate.translation.Translation()
 #     print(token.text, token.lemma_.upper(), token.pos_, token.dep_)
 
 class TradutorLexLibras:
+    __verbose = False
     glosaVlibras = ""
     docSpaCy = ""
     glosa = ""
@@ -95,16 +100,28 @@ class TradutorLexLibras:
         return glosa
 
     def __printMetaData(self):
-        self.selected = []
-        flags = []
-        for token in self.docSpaCy:
-            if token._.eh_corresponde:
-                self.selected.append(token._.metaDados['palavra'])
-                flags.append(token._.metaDados['existeSinalLibras'])
+        if self.__verbose:
+            self.selected = []
+            flags = []
+            for token in self.docSpaCy:
+                if token._.eh_corresponde:
+                    self.selected.append(token._.metaDados['palavra'])
+                    flags.append(token._.metaDados['existeSinalLibras'])
 
-        print(self.selected)
-        print(flags)
+            print(self.selected)
+            print(flags)
         
+    def setVerboseMode(self, boolFlag):
+        if isinstance(boolFlag, bool):
+            self.__verbose = boolFlag
+            os.environ['LEXLIBRAS_VERBOSE'] = "1" if boolFlag else "0"
+
+        else:
+            print("\n\n\tO parametro deve ser boleano!\n")
+    
+    def getVerboseMode(self):
+        return self.__verbose
+
 
     # def __init__(self):
         # return self

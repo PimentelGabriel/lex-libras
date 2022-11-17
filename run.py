@@ -1,3 +1,5 @@
+import os, sys
+
 # from db.repository.class_word_repository import ClassWordRepository
 # from db.repository.dictionary_repository import DictionaryRepository
 
@@ -5,6 +7,12 @@ from lex_libras.engine import TradutorLexLibras
 
 
 tradutorLexLibras = TradutorLexLibras()
+
+if '-v' in sys.argv:
+    print("Verbose mode active!!!")
+    tradutorLexLibras.setVerboseMode(True)
+else:
+    tradutorLexLibras.setVerboseMode(False)
 
 # f1 = tradutorLexLibras.traduzir("Vamos vencer a dengue com um baixolão")
 # f1 = tradutorLexLibras.traduzir("Vamos vencer a dengue!")
@@ -33,6 +41,26 @@ print("[ESPERAD]: "+glosa)
 if glosa2 != None:
     print("[REALIST]: "+glosa2)
 print("[SAIDA-L]: "+f1)
+
+frase = None
+
+ctl = True
+
+while(ctl):
+    print("\n\n\nDigite a frase para ser traduzida: ")
+    frase = input()
+    f1 = tradutorLexLibras.traduzir(frase)
+    print(f1)
+    print("\n\n\nDeseja inserir uma nova frase? Sim = s ou Não = n")
+    resp = input()
+    if(resp == "n" or resp == "N"):
+        ctl = False
+        break
+    else:
+        os.system("clear")
+
+
+
 
 # print(tradutorLexLibras.glosaVlibras)
 # print(tradutorLexLibras.docSpaCy)

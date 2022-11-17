@@ -1,6 +1,7 @@
 from db.repository.dictionary_repository import DictionaryRepository
 
 from .functions import *
+import os
 
 class CoreTranslater:
     lastQueryResult = None
@@ -52,11 +53,11 @@ class CoreTranslater:
         # Palavras que em PT-br são duas porém em LIBRAS são representada como uma (no caso um sinal)
         aglutinarPalavra(Doc)
 
-
-        print("\n\n#lemmas")
         lemmas = CoreTranslater.returnPalavraElegida(Doc)
-        print(lemmas)
-        print("#fim lemmas")
+        if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+            print("\n\n#lemmas")
+            print(lemmas)
+            print("#fim lemmas")
 
 
         # ==================================================
@@ -67,7 +68,8 @@ class CoreTranslater:
         # dictionary.selectPalavras(lemas):
         
         # 
-        print("Query from DB")
+            print("Query from DB")
+
         palavrasDB = self.__dictionaryRepository.selectPalavras(lemmas)
         
         ArrayPalavras = []
@@ -89,7 +91,9 @@ class CoreTranslater:
         #FAZENDO DATILOLOGIA
         for token in Doc:
             if not token._.metaDados['existeSinalLibras']:
-                print(token._.metaDados["palavra"])
+                if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+                    print(token._.metaDados["palavra"])
+    
                 datilologiaP = ""
                 for l in token._.metaDados['palavra']:
                     if token._.metaDados['palavra'].index(l) == 0:

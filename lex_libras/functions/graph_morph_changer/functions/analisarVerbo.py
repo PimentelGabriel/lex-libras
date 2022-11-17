@@ -1,5 +1,10 @@
+import os
+from lex_libras.functions.utils.get_pronouns import getPronouns
+
+
 def analisarVerbo(token, Doc):
-    print("\n\tHELLO")
+    if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+        print("\n\tHELLO")
     token._.metaDados["verboData"] = {
         "numero": '*',
         "pessoa": "*",
@@ -14,7 +19,8 @@ def analisarVerbo(token, Doc):
     
     # Obter flag do banco de dados para tratar adequadamente cada verbo
     if token._.metaDados["claseGramatical"] == 'VERB-P':
-        print("Pêgo o verbo "+token.text)
+        if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+            print("Pêgo o verbo "+token.text)
 
         if token.dep_ == "ROOT":
             # Obtem o numero (singular ou plural) e a pessoa (1º, 2º ou 3º) do sujeito da frase pra concatenar com o verbo principal
@@ -34,9 +40,12 @@ def analisarVerbo(token, Doc):
             for c in token.children:
                     # Caso seja o objeto
                     if c.dep_ == "obj":
-                        print(f"{c.text} é {c.dep_} e o seu pos é {c.pos_}")
-                        print("Veja o morph")
-                        print(c.morph)
+                        if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+                            print("\n\n\t\tVERBOSE!!!!!!!!\n\n")
+                            print(f"{c.text} é {c.dep_} e o seu pos é {c.pos_}")
+                            print("Veja o morph")
+                            print(c.morph)
+
                         # Ver se é substantivo
                         if c.pos_.startswith("NOUN"):
 
@@ -67,6 +76,7 @@ def analisarVerbo(token, Doc):
     
     if token._.metaDados["claseGramatical"] == 'VERB-G':
         raise Exception('Tratativa para os verbos que são conjugado pelo gênero (VERB-G) não implementado')
+    
     if token._.metaDados["claseGramatical"] == 'VERB-L':
         VERB_L_n_tratado = False
         for c in token.children:
@@ -76,3 +86,8 @@ def analisarVerbo(token, Doc):
             
         if not VERB_L_n_tratado:
                 raise Exception(f'O verbo {token.text} conjugado por locativo.\n\tTratativa para os verbos que são conjugado pelo locativo (VERB-L) não implementado')
+
+    if token._.metaDados["claseGramatical"] == 'VERB':
+        pronoun = getPronouns(token)
+
+        token._.metaDados["palavra"] = pronoun+" "+token._.metaDados["palavra"]

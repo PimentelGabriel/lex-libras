@@ -1,10 +1,14 @@
+import os
+
 class SintaticOrganizer:
     
     def __init__(self):
-        print("sintaticOrganizer called")
+        if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+            print("sintaticOrganizer called")
 
     def analisar(self):
-        print("sintaticOrganizer called")
+        if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+            print("sintaticOrganizer called")
         
 
 

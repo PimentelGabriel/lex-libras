@@ -7,4 +7,5 @@ def aglutinarPalavra(Doc):
                 for child in token.children:
                     if child.pos_ in ("ADP"):
                         token._.metaDados["palavra"] = child.text.upper() + " " + token.text.upper()
-                        print(f"Palavra aglutinada: {token._.metaDados['palavra']}");
+                        if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+                            print(f"Palavra aglutinada: {token._.metaDados['palavra']}");
