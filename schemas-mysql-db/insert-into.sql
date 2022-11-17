@@ -19,9 +19,9 @@ INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(15, 'SUBST./ADJ
 INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(1, 'SUBSTANTIVO', 'NOUN', '');
 INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(3, 'VERBO', 'VERB', '');
 
-INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(30, 'VERBO', 'VERB-P', '');
-INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(31, 'VERBO', 'VERB-G', '');
-INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(32, 'VERBO', 'VERB-L', '');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(30, 'VERBO', 'VERB-P', 'Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(31, 'VERBO', 'VERB-G', 'Verbo conjugado por gênero, nesse caso o tipo de objeto. Ex.: O prato caiu =>	<CAIR-PRATO>');
+INSERT INTO classes_gramaticais(id, nome, flag, descricao) value(32, 'VERBO', 'VERB-L', 'Verbo conjugado por locativo. Ex.: Colocara a xícara na mesa => MESA objredondo_COLOCAR');
 
 -- INSERT INTO assuntos
 INSERT INTO assuntos(id, nome) value(31, 'ALIMENTO/BEBIDA');
