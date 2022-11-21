@@ -1,0 +1,65 @@
+1. 
+    Frase           : Vamos combater a dengue!
+    Saide esperada1 : MOSQUITO VIR 1pVENCER2s
+    Saida atual     : IR 1pCOMBATER3s DENGUE!
+
+    Obs.: 
+        Frase no imperativo
+        * A palavra dengue em LIBRAS é um substantivo
+
+2.
+    Frase           : O mosquito da dengue nasce e se desenvolve em água parada!
+    Saide esperada1 : ÁGUA LARGAD@ MOSQUITO SURGIR DESENVOLVER
+    Saida atual     : MOSQUITO DENGUE NASCER SE DESENVOLVER ÁGUA PARAD@!
+ 
+3. 
+    Frase           : Por isso temos que manter a caixa d'agua fechada!
+    Saide esperada1 : ENTÃO POR-ISSO CAIXA PRECISAR objeto-plano-vertical TAMPAR
+    Saide esperada2 : ENTÃO POR-ISSO CAIXA PRECISAR CL <CAIXA-TAMPAR>
+    Saida atual     :
+
+    Obs: 
+        A 'saida esperada1' está de acordo com o documento inicial porém, para alcançar tal resutado deve-se
+      armazenar a descrição equivalente no banco de dados para concatenar com o verbo, verbo este que se conjuga por g  
+    Glosa padronizada
+        Por isso temos que manter a caixa d'agua fechada!
+        ENTÃO POR-ISSO CAIXA PRECISAR CL <TAMPAR-CAIXA>
+
+4.
+    Frase           : Tomar cuidado com vasos, garrafas, latas e pneus velhos!
+    Saide esperada1 : CUIDADO OBJETO-ARREDONDADO-LONGO FLOR MARCADOR-1
+                      VIDRO^OBJETO-CILÍNDRICO-ALONGADO MARCADOR-2
+                      FERRO^OBJETO-MÉDIO MARCADOR-3 borracha^COISA-
+                      CIRCULAR VELH@
+    Saida atual     :
+
+    Obs:
+        Tomar cuidado com vasos...garrafas...latas.. pneus velhos!
+        Tomar cuidado com vasos, garrafas, latas e pneus velhos!
+
+5.
+    Frase           : Tudo que acumule água
+    Saide esperada1 : TUDO ÁGUA DENTRO.
+    Saida atual     :
+
+
+    Obs:
+        PROFESSOR, ESSE NÍVEL DE TRADUÇÃO, I.E. POR SUBSTITUIÇÃO DE PALAVRAS SEMANTICAMENTE SIMILARES,
+      EU ACREDITO QUE SÓ PODE SER OBTIDO POR INTELIGÊNCIA ARTIFICIAL, POR CONTA DA BAIXA QUANTIDADE
+      DE DADOS NÃO POSSIVEL FAZER ESSA TRADUÇÃO A NÃO SER QUE A GENTE ADICIONE MANUALMENTE NO CÓDIGO (HARD-CODED) 
+
+6.
+    Frase           : Se você tiver febre alta, dores musculares, de cabeça, nos joelhos, cotovelos e mal estar em 
+                      geral, rocure serviços médicos
+    Saide esperada1 : VOCÊ FEBRE ALT@ MÚSCULO-BRAÇO DOER CABEÇA^DOR JOELHO COTOVELO DOER M-A-L CORPO-TODO PROCURAR2s MÉDICO.
+    Saida atual     :
+
+7.
+    Frase           : Falei que água é um perigo!
+    Saide esperada1 : FALAR JÁ ÁGUA PERIGOS@!
+    Saida atual     : FALAR JÀ ÁGUA SER PERIGO!
+
+8.
+    Frase           : Água parada cascão! Água parada!
+    Saide esperada1 : SÓ ÁGUA LARGAD@! ÁGUA LARGAD@!
+    Saida atual     :
