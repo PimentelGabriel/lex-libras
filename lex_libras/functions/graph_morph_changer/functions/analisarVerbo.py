@@ -1,10 +1,11 @@
 import os
 from lex_libras.functions.utils.get_pronouns import getPronouns
-
+from lex_libras.functions.utils.services.fetch_conjugation_verb import fetchInfinitiveForm
 
 def analisarVerbo(token, Doc):
     if os.environ['LEXLIBRAS_VERBOSE'] == "1":
         print("\n\tHELLO")
+        
     token._.metaDados["verboData"] = {
         "numero": '*',
         "pessoa": "*",
@@ -16,7 +17,17 @@ def analisarVerbo(token, Doc):
     
     # token._.metaDados["claseGramatical"]
     
+    # Analisa se o verbo não está no presente
+    # caso positivo ele passará para o infinitivo
+    # Caso a frase termine com '!' (excalmação) ele colocará a particula 'JÁ' 
+    if token.morph.get('Tense'):
+        if token.morph.get('Tense') != "Pres" and token.doc[len(token.doc)-1].text == "!":
+            token._.metaDados['ehLinkavel'] = False
+            token._.metaDados['palavra'] = fetchInfinitiveForm(token.lemma_) + " JÁ"
     
+
+
+
     # Obter flag do banco de dados para tratar adequadamente cada verbo
     if token._.metaDados["claseGramatical"] == 'VERB-P':
         if os.environ['LEXLIBRAS_VERBOSE'] == "1":
@@ -70,7 +81,11 @@ def analisarVerbo(token, Doc):
                                 raise Exception(f"Número da palavra {c.text} não encontrada.\n\tA palavra deve ser um objeto, porém não possui\nNumber")
                             break
 
-        palavraGlosa =  token._.metaDados["verboData"]["pessoa"]+token._.metaDados["verboData"]["numero"]+token._.metaDados["palavra"]+token._.metaDados["verboData"]["obj"]["pessoa"]+token._.metaDados["verboData"]["obj"]["numero"]
+        palavraGlosa =  token._.metaDados["verboData"]["pessoa"]+\
+                        token._.metaDados["verboData"]["numero"]+\
+                        token._.metaDados["palavra"]+\
+                        token._.metaDados["verboData"]["obj"]["pessoa"]+\
+                        token._.metaDados["verboData"]["obj"]["numero"]
         
         token._.metaDados["palavra"] = palavraGlosa
     
@@ -89,5 +104,7 @@ def analisarVerbo(token, Doc):
 
     if token._.metaDados["claseGramatical"] == 'VERB':
         pronoun = getPronouns(token)
-
-        token._.metaDados["palavra"] = pronoun+" "+token._.metaDados["palavra"]
+        if pronoun:
+            token._.metaDados["palavra"] = pronoun+" "+token._.metaDados["palavra"]
+        else:
+            token._.metaDados["palavra"] = token._.metaDados["palavra"]

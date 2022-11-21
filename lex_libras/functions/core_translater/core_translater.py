@@ -6,6 +6,8 @@ import os
 class CoreTranslater:
     lastQueryResult = None
 
+    print(f"LEXLIBRAS_VERBOSE: {os.environ['LEXLIBRAS_VERBOSE']}")
+
     def __init__(self):
         self.__dictionaryRepository = DictionaryRepository()
         return None
@@ -79,9 +81,10 @@ class CoreTranslater:
         except Exception as e:
             print(e)
 
-
-        print("\nArrayPalavras")
-        print(ArrayPalavras)
+        if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+            print("\nArrayPalavras")
+            print(ArrayPalavras)
+        
         for palavra in ArrayPalavras:
             for token in Doc:
                 if palavra['palavra'] == token._.metaDados['palavra']:

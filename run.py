@@ -1,4 +1,8 @@
 import os, sys
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 # from db.repository.class_word_repository import ClassWordRepository
 # from db.repository.dictionary_repository import DictionaryRepository

@@ -1,3 +1,5 @@
+import os
+
 # Essa função deve remover as conjunções de uma frase PT-br para não ser usada em uma frase LIBRAS
 
 def removeConj(token):
@@ -9,5 +11,7 @@ def removeConj(token):
     ):
         token._.eh_corresponde = True
 
+        if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+            print(f"Particula {token.text} não elegível")
     
     # print("removeConj in implementing state")

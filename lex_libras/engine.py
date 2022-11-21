@@ -27,6 +27,7 @@ Token.set_extension("eh_corresponde", default=False)
 #
 Token.set_extension("metaDados", default={
     "palavra": None,
+    "ehLinkavel": True, #Atributo para dizer se o sistema deve substituir os espaços vazios por '-' ou não linkavel (ehLinkavel == True: o sistema substitui)
     "claseGramatical": None,
     "ordem": None,
     "existeSinalLibras": False
@@ -88,7 +89,8 @@ class TradutorLexLibras:
         firstPass = True
         for w in self.docSpaCy:
             if w._.eh_corresponde:
-                w._.metaDados["palavra"] = re.sub("\s", "-", w._.metaDados["palavra"])
+                if w._.metaDados["ehLinkavel"]:
+                    w._.metaDados["palavra"] = re.sub("\s", "-", w._.metaDados["palavra"])
                 if w.i == 0 or firstPass:
                     glosa = w._.metaDados["palavra"]
                     firstPass = False
@@ -115,6 +117,11 @@ class TradutorLexLibras:
         if isinstance(boolFlag, bool):
             self.__verbose = boolFlag
             os.environ['LEXLIBRAS_VERBOSE'] = "1" if boolFlag else "0"
+            if boolFlag:
+                print("\n\tVerbose mode activated!!!\n")
+            else:
+                print("\n\tVerbose mode disabled!!!\n")
+
 
         else:
             print("\n\n\tO parametro deve ser boleano!\n")
