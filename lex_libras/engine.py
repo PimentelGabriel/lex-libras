@@ -1,11 +1,16 @@
+#import vlibras_translate
+import os
+import re
 import spacy
 from spacy.tokens import Doc, Token
-import os
-# from spacy.tokens import 
+from .functions.graph_morph_changer import GraphMorphChanger
+from .functions.core_translater import CoreTranslater
+from .functions.utils.split_keep_signal import splitKeepSignal
 
-import re
+# from spacy.tokens import
 
-#Setting if de execution is verbose
+
+# Setting if de execution is verbose
 verbose = False
 
 # Meta dados sobre a frase
@@ -27,22 +32,20 @@ Token.set_extension("eh_corresponde", default=False)
 #
 Token.set_extension("metaDados", default={
     "palavra": None,
-    "ehLinkavel": True, #Atributo para dizer se o sistema deve substituir os espaços vazios por '-' ou não linkavel (ehLinkavel == True: o sistema substitui)
+    # Atributo para dizer se o sistema deve substituir os espaços vazios por '-' ou não linkavel (ehLinkavel == True: o sistema substitui)
+    "ehLinkavel": True,
     "claseGramatical": None,
     "ordem": None,
     "existeSinalLibras": False
-    }
+}
 )
 
 nlp = spacy.load("pt_core_news_lg")
 
-from .functions.core_translater import CoreTranslater
-from .functions.graph_morph_changer import GraphMorphChanger
 
 # from .functions.sintatic_organizer import sintaticOrganizer
 
-import vlibras_translate
-vlibras_tradutor = vlibras_translate.translation.Translation()
+#vlibras_tradutor = vlibras_translate.translation.Translation()
 
 # for token in doc:
 #     print(token.text, token.lemma_.upper(), token.pos_, token.dep_)
@@ -64,33 +67,36 @@ class TradutorLexLibras:
         self.__graph_morph_changer()
         # self.__printMetaData()
 
-        
         self.__sintatic_organizer()
         self.__printMetaData()
+
+        if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+            print(f"\n\tGLOSA:\t{self.__getGlosa()}\n")
 
         return self.__getGlosa()
 
     def __core_translater(self):
         print("__core_translater is in implementation state")
         with CoreTranslater() as coreTranslater:
-            coreTranslater.analisar(self.docSpaCy) 
+            coreTranslater.analisar(self.docSpaCy)
 
     def __graph_morph_changer(self):
         print("__graph_morph_changer not implemented yet")
         # graphMorphChanger = GraphMorphChanger()
-        with GraphMorphChanger() as graphMorphChanger: 
+        with GraphMorphChanger() as graphMorphChanger:
             graphMorphChanger.analisar(self.docSpaCy)
 
     def __sintatic_organizer(self):
         print("__sintatic_organizer not implemented yet")
-    
+
     def __getGlosa(self):
         glosa = ""
         firstPass = True
         for w in self.docSpaCy:
             if w._.eh_corresponde:
                 if w._.metaDados["ehLinkavel"]:
-                    w._.metaDados["palavra"] = re.sub("\s", "-", w._.metaDados["palavra"])
+                    w._.metaDados["palavra"] = re.sub(
+                        "\s", "-", w._.metaDados["palavra"])
                 if w.i == 0 or firstPass:
                     glosa = w._.metaDados["palavra"]
                     firstPass = False
@@ -112,7 +118,7 @@ class TradutorLexLibras:
 
             print(self.selected)
             print(flags)
-        
+
     def setVerboseMode(self, boolFlag):
         if isinstance(boolFlag, bool):
             self.__verbose = boolFlag
@@ -122,13 +128,11 @@ class TradutorLexLibras:
             else:
                 print("\n\tVerbose mode disabled!!!\n")
 
-
         else:
             print("\n\n\tO parametro deve ser boleano!\n")
-    
+
     def getVerboseMode(self):
         return self.__verbose
-
 
     # def __init__(self):
         # return self
@@ -140,16 +144,31 @@ class TradutorLexLibras:
     #     self.session.close()
 
 
+# tradutorLexLibras = TradutorLexLibras()
 
 
+class Preparer():
+    phrases = []
+    glosas = []
+    tradutorLexLibras = None
 
+    def translate(self, intirePhrase):
+        self.phrases = []
+        self.glosas = []
+        self.tradutorLexLibras = TradutorLexLibras()
+        phrases = splitKeepSignal(intirePhrase)
 
+        for phrase in phrases:
+            self.glosas.append(self.tradutorLexLibras.traduzir(phrase))
 
+        return self.getGlosasUnion()
 
+    def getGlosasUnion(self):
+        return ' '.join(self.glosas)
 
-
-
-
+    def __enter__(self):
+        self.tradutorLexLibras = TradutorLexLibras()
+        return self
 
 # def glosaTest(token):
 #     if token.pos_ == "VERB":
