@@ -1,5 +1,7 @@
-import os, requests as req
+import os
+import requests as req
 from bs4 import BeautifulSoup as bs
+
 
 def fetchConjugation(data):
     HEADERS = {
@@ -9,7 +11,7 @@ def fetchConjugation(data):
     # url = "https://www.dicionarioinformal.com.br/flexoes/falares/"
     URL = "https://www.dicionarioinformal.com.br/flexoes/"
     # div[class='col-xs-12'] > h1 > a
-    
+
     if type(data) == 'str':
         # if os.environ['LEXLIBRAS_VERBOSE'] == "1":
         page = req.get(
@@ -34,11 +36,11 @@ def fetchInfinitiveForm(data):
     # url = "https://www.dicionarioinformal.com.br/flexoes/falares/"
     URL = "https://www.dicionarioinformal.com.br/flexoes/"
     # div[class='col-xs-12'] > h1 > a
-    
-    print(f"\n\n\t\tHERE1\n{type(data)}\n\n")
+
     if isinstance(data, str):
-        print("\n\n\t\tHERE2\n\n")
-        # if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+        if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+            print(f"Palavra em consulta: {data}")
+
         page = req.get(
             URL+data,
             HEADERS

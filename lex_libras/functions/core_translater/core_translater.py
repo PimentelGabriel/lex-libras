@@ -3,10 +3,11 @@ from db.repository.dictionary_repository import DictionaryRepository
 from .functions import *
 import os
 
+
 class CoreTranslater:
     lastQueryResult = None
 
-    print(f"LEXLIBRAS_VERBOSE: {os.environ['LEXLIBRAS_VERBOSE']}")
+    print(f"LEXLIBRAS_VERBOSE: {os.environ.get('LEXLIBRAS_VERBOSE')}")
 
     def __init__(self):
         self.__dictionaryRepository = DictionaryRepository()
@@ -23,7 +24,7 @@ class CoreTranslater:
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         None
-        #print("Tchau")
+        # print("Tchau")
 
     @staticmethod
     def returnPalavraElegida(Doc):
@@ -35,7 +36,7 @@ class CoreTranslater:
         return lemmas
 
     def analisar(self, Doc):
-        #TRIAGEM DE PALAVRAS QUE VÃO PARA A GLOSA
+        # TRIAGEM DE PALAVRAS QUE VÃO PARA A GLOSA
         # Deve-se selecionar quais palavras da sentença deve ser considerada
         for token in Doc:
             removeConj(token)
@@ -61,19 +62,18 @@ class CoreTranslater:
             print(lemmas)
             print("#fim lemmas")
 
-
         # ==================================================
 
         # Buscar no banco se há sinal correspondente as palavras recebidas e lematizadas
         # Fazer uam raw query no SQLAlchemy usando o statment 'where palavra in (lemas[0], lemas[1], lemas[2], lemas[3])'
-        
+
         # dictionary.selectPalavras(lemas):
-        
-        # 
+
+        #
             print("Query from DB")
 
         palavrasDB = self.__dictionaryRepository.selectPalavras(lemmas)
-        
+
         ArrayPalavras = []
         try:
             for p in palavrasDB:
@@ -84,23 +84,23 @@ class CoreTranslater:
         if os.environ['LEXLIBRAS_VERBOSE'] == "1":
             print("\nArrayPalavras")
             print(ArrayPalavras)
-        
+
         for palavra in ArrayPalavras:
             for token in Doc:
                 if palavra['palavra'] == token._.metaDados['palavra']:
                     token._.metaDados['existeSinalLibras'] = True
                     token._.metaDados['claseGramatical'] = palavra['flag']
 
-        #FAZENDO DATILOLOGIA
+        # FAZENDO DATILOLOGIA
         for token in Doc:
             if not token._.metaDados['existeSinalLibras']:
                 if os.environ['LEXLIBRAS_VERBOSE'] == "1":
                     print(token._.metaDados["palavra"])
-    
+
                 datilologiaP = ""
                 for l in token._.metaDados['palavra']:
                     if token._.metaDados['palavra'].index(l) == 0:
                         datilologiaP = l
-                    else: 
+                    else:
                         datilologiaP += "-"+l
                 token._.metaDados["palavra"] = datilologiaP

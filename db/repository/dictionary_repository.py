@@ -1,3 +1,4 @@
+import os
 from db.configs.connection import DBConnectionHandler
 from db.entities.dictionary import Dictionary
 from db.entities.class_word import ClassWord
@@ -18,12 +19,22 @@ class DictionaryRepository:
                 .all()
 
     def selectPalavras(self, lemmas):
+        if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+            i = 0
+            print(f"Path {__file__}")
+            print(f"Lemas recebido em selectPalavras: ")
+            print(lemmas)
+
         palavrasCandidatas = ""
         # Fazer uam raw query no SQLAlchemy usando o statment 'where palavra in (lemas[0], lemas[1], lemas[2], lemas[3])'
         for palavra in lemmas:
+            if os.environ['LEXLIBRAS_VERBOSE'] == '1':
+                print(f"In for: {i} - {palavra}")
+                i += 1
+
             if lemmas.index(palavra) == 0:
                 palavrasCandidatas = f'\'{palavra}\''
-            else:       
+            else:
                 palavrasCandidatas += f', \'{palavra}\''
 
         # print(f'SELECT distinct(palavra) FROM palavras WHERE palavra IN ({palavrasCandidatas})');
@@ -44,7 +55,6 @@ class DictionaryRepository:
                 # for r in resp:
                 #     print(r)
 
-    
             except Exception as e:
                 print(e)
             # print(type(resp))
@@ -54,7 +64,7 @@ class DictionaryRepository:
 
         return []
 
-            # for row in resp:
-            #     print(row)
+        # for row in resp:
+        #     print(row)
 
         # SELECT distinct(palavra) FROM palavras WHERE palavra IN ('IR', 'PARA', 'O', 'PRAIA')

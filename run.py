@@ -1,19 +1,24 @@
-import os, sys
+import os
+import sys
+from lex_libras.engine import Preparer, TradutorLexLibras
 from dotenv import load_dotenv
-
-load_dotenv()
+load_dotenv("./.env")
 
 
 # from db.repository.class_word_repository import ClassWordRepository
 # from db.repository.dictionary_repository import DictionaryRepository
 
-from lex_libras.engine import TradutorLexLibras
+try:
+    print(os.environ['LEXLIBRAS_VERBOSE'])
+except Exception as e:
+    print(e)
 
-
+preparer = Preparer()
 tradutorLexLibras = TradutorLexLibras()
 
 if '-v' in sys.argv:
     print("Verbose mode active!!!")
+    os.environ['LEXLIBRAS_VERBOSE'] == "1"
     tradutorLexLibras.setVerboseMode(True)
 else:
     tradutorLexLibras.setVerboseMode(False)
@@ -50,20 +55,21 @@ frase = None
 
 ctl = True
 
-while(ctl):
+while (ctl):
     print("\n\n\nDigite a frase para ser traduzida: ")
     frase = input()
-    f1 = tradutorLexLibras.traduzir(frase)
+    #f1 = tradutorLexLibras.traduzir(frase)
+
+    f1 = preparer.translate(frase)
+
     print(f1)
     print("\n\n\nDeseja inserir uma nova frase? Sim = s ou Não = n")
     resp = input()
-    if(resp == "n" or resp == "N"):
+    if (resp == "n" or resp == "N"):
         ctl = False
         break
     else:
         os.system("clear")
-
-
 
 
 # print(tradutorLexLibras.glosaVlibras)
