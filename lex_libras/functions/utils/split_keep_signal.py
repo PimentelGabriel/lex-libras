@@ -4,6 +4,7 @@ import os
 def splitKeepSignal(string):
     minI = 0
     frases = []
+
     for i, l in enumerate(string, start=0):
         if l in ("!", "?", "."):  # Phrase separater
             frases.append(string[minI:i+1])
@@ -16,7 +17,11 @@ def splitKeepSignal(string):
         if frase[-1] == " ":
             frases[i] = frase[:-1]
 
+    if len(frases) == 0:
+        return [string]
+    else:
+        return frases
+
     # print(frases)
     # if os.environ["LEXLIBRAS_VERBOSE"] == "1":
     #     print(frases)
-    return frases
