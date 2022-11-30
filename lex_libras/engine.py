@@ -23,6 +23,9 @@ E por ai vai
 DEVE SER MELHOR IMPLEMENTADO
 '''
 
+# Meta dado para sinalizar que a frase possui marcadores
+Doc.set_extension("possuiMarcador", default=False)
+
 # Meta dado de todos os token para dizer que a palavra é traduzida e usada na glosa Libras
 Token.set_extension("eh_corresponde", default=False)
 
@@ -36,7 +39,8 @@ Token.set_extension("metaDados", default={
     "ehLinkavel": True,
     "claseGramatical": None,
     "ordem": None,
-    "existeSinalLibras": False
+    "existeSinalLibras": False,
+    "possuiMarcadorLIBRAS": False
 }
 )
 
@@ -81,7 +85,7 @@ class TradutorLexLibras:
             coreTranslater.analisar(self.docSpaCy)
 
     def __graph_morph_changer(self):
-        print("__graph_morph_changer not implemented yet")
+        print("__graph_morph_changer not completly implemented yet")
         # graphMorphChanger = GraphMorphChanger()
         with GraphMorphChanger() as graphMorphChanger:
             graphMorphChanger.analisar(self.docSpaCy)
