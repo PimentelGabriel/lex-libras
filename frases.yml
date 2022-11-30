@@ -19,29 +19,32 @@
     Obs.:
 
 3. 
-    Nota            : 7/10
-    Dificuldade     : 7/10
+    Nota            : 4/10
+    Dificuldade     : 8/10
     Frase           : Por isso temos que manter a caixa d'agua fechada!
     Saide esperada1 : ENTÃO POR-ISSO CAIXA PRECISAR objeto-plano-vertical TAMPAR
     Saide esperada2 : ENTÃO POR-ISSO CAIXA PRECISAR CL <CAIXA-TAMPAR>
-    Saida atual     :
+    Saida atual     : POR-ISSO TER MANTER CAIXA D-'-A-G-U-O FECHAR!
 
     Obs: 
+        O spacy deve retokenizar caixa d'agua como sendo um substantivo
+        
         A 'saida esperada1' está de acordo com o documento inicial porém, para alcançar tal resutado deve-se
       armazenar a descrição equivalente no banco de dados para concatenar com o verbo, verbo este que se conjuga por g  
     Glosa padronizada
         Por isso temos que manter a caixa d'agua fechada!
         ENTÃO POR-ISSO CAIXA PRECISAR CL <TAMPAR-CAIXA>
 
+
 4.
-    Nota            : 7/10
+    Nota            : 9.5/10
     Dificuldade     : 7/10
     Frase           : Tomar cuidado com vasos, garrafas, latas e pneus velhos!
     Saide esperada1 : CUIDADO OBJETO-ARREDONDADO-LONGO FLOR MARCADOR-1
                       VIDRO^OBJETO-CILÍNDRICO-ALONGADO MARCADOR-2
                       FERRO^OBJETO-MÉDIO MARCADOR-3 borracha^COISA-
                       CIRCULAR VELH@
-    Saida atual     : TOMAR CUIDADO VASO++, GARRAFA++, LATA++ PNEU++ VELH@!
+    Saida atual     : TOMAR CUIDADO VASO++ MARCADOR-1, GARRAFA++ MARCADOR-2, LATA++ MARCADOR-3 PNEU++ VELH@ MARCADOR-4!
 
     Obs:
         Tomar cuidado com vasos...garrafas...latas.. pneus velhos!
@@ -63,7 +66,7 @@
       DE DADOS NÃO POSSIVEL FAZER ESSA TRADUÇÃO A NÃO SER QUE A GENTE ADICIONE MANUALMENTE NO CÓDIGO (HARD-CODED) 
 
 6.
-    Nota            : 6/10 
+    Nota            : 6/10
     Frase           : Se você tiver febre alta, dores musculares, de cabeça, nos joelhos, cotovelos e mal estar em geral, procure serviços médicos
     Saide esperada1 : VOCÊ FEBRE ALT@ MÚSCULO-BRAÇO DOER CABEÇA^DOR JOELHO COTOVELO DOER M-A-L CORPO-TODO PROCURAR2s MÉDICO.
     Saida atual     : VOCÊ TER FEBRE ALT@, DOR++ M-U-S-C-U-L-A-@, CABEÇA, JOELHO++, COTOVELO++ MAL ESTAR GERAL, PROCURAR SERVIÇO++ MÉDIC@
@@ -71,7 +74,7 @@
     Obs.: Palavra "M-U-S-C-U-L-A-@" deve ser substituida por "MÚSCULO-BRAÇO"
 
 7.
-    Nota            : 8.5/10
+    Nota            : 9/10
     Frase           : Falei que água é um perigo!
     Saide esperada1 : FALAR JÁ ÁGUA PERIGOS@!
     Saida atual     : FALAR JÀ ÁGUA SER PERIGO!
