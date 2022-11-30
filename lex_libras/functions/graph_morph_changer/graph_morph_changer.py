@@ -1,5 +1,6 @@
 from .functions import *
 
+
 class GraphMorphChanger:
 
     # @staticmethod
@@ -7,7 +8,7 @@ class GraphMorphChanger:
         # Passa em cada token para analisar sua grafia e
         # assim fazer as alterações para Glosa LIBRAS
         for token in Doc:
-        #     print(token.pos_)
+            #     print(token.pos_)
             # Pronomes
             if token.pos_.startswith("PRON"):
                 # print("Pronound fonud")
@@ -15,7 +16,7 @@ class GraphMorphChanger:
                     token._.metaDados["palavra"] = "EL@"
                 elif token.text.upper() in ('ELES', 'ELAS'):
                     token._.metaDados["palavra"] = "EL@S"
-                #else:
+                # else:
                     #token._.metaDados["palavra"] = token.lemma_.upper()
             # Verbos
             elif token.pos_.startswith("VERB"):
@@ -31,6 +32,8 @@ class GraphMorphChanger:
                 analisarAdjetivo(token, Doc)
                 # Add o ++ para cada substantivo no plural
                 analisarSubsPlur(token)
+
+        addMarcadorLIBRAS(Doc)
 
     def __enter__(self):
         return self
