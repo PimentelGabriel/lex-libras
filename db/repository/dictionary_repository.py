@@ -20,26 +20,36 @@ class DictionaryRepository:
 
     def selectPalavras(self, lemmas):
         if os.environ['LEXLIBRAS_VERBOSE'] == "1":
-            i = 0
             print(f"Path {__file__}")
             print(f"Lemas recebido em selectPalavras: ")
             print(lemmas)
 
         palavrasCandidatas = ""
         # Fazer uam raw query no SQLAlchemy usando o statment 'where palavra in (lemas[0], lemas[1], lemas[2], lemas[3])'
+        i = 0
         for palavra in lemmas:
+            # Sanitizando as palavras
+            # palavra.replace("'", "\\\'")
+            # palavra.replace('"', '\\\"')
+
+            if lemmas.index(palavra) == 0:
+                if palavra.find("'"):
+                    palavra = palavra.replace(r"'", "\\\'")
+                palavrasCandidatas = f'\'{palavra}\''
+            else:
+                if palavra.find("'"):
+                    palavra = palavra.replace(r"'", "\\\'")
+                palavrasCandidatas += f', \'{palavra}\''
+
             if os.environ['LEXLIBRAS_VERBOSE'] == '1':
                 print(f"In for: {i} - {palavra}")
                 i += 1
 
-            if lemmas.index(palavra) == 0:
-                palavrasCandidatas = f'\'{palavra}\''
-            else:
-                palavrasCandidatas += f', \'{palavra}\''
-
         # print(f'SELECT distinct(palavra) FROM palavras WHERE palavra IN ({palavrasCandidatas})');
-        print("palavrasCandidatas")
-        print(palavrasCandidatas)
+        print(os.environ['LEXLIBRAS_VERBOSE'])
+        if os.environ['LEXLIBRAS_VERBOSE'] == '1':
+            print("Palavras a serem pesquisadas no BD:")
+            print(f"\n{palavrasCandidatas}")
 
         query = f'SELECT distinct(p.palavra) as palavra, c.nome, c.flag FROM palavras AS p, classes_gramaticais AS c WHERE p.palavra IN ({palavrasCandidatas}) AND p.classe_gramatical like c.id GROUP BY p.palavra;'
 
@@ -56,6 +66,7 @@ class DictionaryRepository:
                 #     print(r)
 
             except Exception as e:
+                print("\n### ERRO AO REALIZAR A QUERY: ###")
                 print(e)
             # print(type(resp))
             # print(len(resp))
