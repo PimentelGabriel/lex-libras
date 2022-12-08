@@ -58,12 +58,12 @@
     Dificuldade     : 8/10
     Frase           : Tudo que acumule água
     Saide esperada1 : TUDO ÁGUA DENTRO.
-    Saida atual     : TUDO QUE A-C-U-M-U-L-E ÁGUA.
+    Saida atual     : TUDO QUE ACUMULAR ÁGUA
 
     Obs:
-        PROFESSOR, ESSE NÍVEL DE TRADUÇÃO, I.E. POR SUBSTITUIÇÃO DE PALAVRAS SEMANTICAMENTE SIMILARES,
+        PROFESSOR, ESSE NÍVEL DE TRADUÇÃO (QUE ACUMAR ÁGUA por ÁGUA DENTRO), I.E. POR SUBSTITUIÇÃO DE PALAVRAS SEMANTICAMENTE SIMILARES,
       EU ACREDITO QUE SÓ PODE SER OBTIDO POR INTELIGÊNCIA ARTIFICIAL, POR CONTA DA BAIXA QUANTIDADE
-      DE DADOS NÃO POSSIVEL FAZER ESSA TRADUÇÃO A NÃO SER QUE A GENTE ADICIONE MANUALMENTE NO CÓDIGO (HARD-CODED) 
+      DE DADOS NÃO POSSIVEL FAZER ESSA TRADUÇÃO A NÃO SER QUE A GENTE ADICIONE MANUALMENTE NO CÓDIGO (HARD-CODED)  
 
 6.
     Nota            : 6/10
@@ -77,7 +77,7 @@
     Nota            : 9/10
     Frase           : Falei que água é um perigo!
     Saide esperada1 : FALAR JÁ ÁGUA PERIGOS@!
-    Saida atual     : FALAR JÀ ÁGUA SER PERIGO!
+    Saida atual     : 1sFALAR ÁGUA SER PERIGO
 
     Obs.: Substituir 'SER PERIGO' para "PERIGOS@"
 
