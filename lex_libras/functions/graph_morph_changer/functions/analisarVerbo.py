@@ -9,11 +9,11 @@ def analisarVerbo(token, Doc):
         print(f"analisarVerbo({token.text}:str)")
 
     token._.metaDados["verboData"] = {
-        "numero": '*',
-        "pessoa": "*",
+        "numero": "",
+        "pessoa": "",
         "obj": {
-            "numero": "*",
-            "pessoa": "*"
+            "numero": "",
+            "pessoa": ""
         }
     }
 
@@ -27,6 +27,9 @@ def analisarVerbo(token, Doc):
             token._.metaDados['ehLinkavel'] = False
             token._.metaDados['palavra'] = fetchInfinitiveForm(
                 token.lemma_) + " JÁ"
+            print(
+                f"\t\tENTROU NO APLICADOR DE JÁ: {token._.metaDados['palavra']}"
+            )
 
     # Obter flag do banco de dados para tratar adequadamente cada verbo
     if token._.metaDados["claseGramatical"] == 'VERB-P':
@@ -92,10 +95,8 @@ def analisarVerbo(token, Doc):
                                 f"Número da palavra {c.text} não encontrada.\n\tA palavra deve ser um objeto, porém não possui\nNumber")
                         break
 
-        palavraGlosa = token._.metaDados["verboData"]["pessoa"] +\
-            token._.metaDados["verboData"]["numero"] +\
-            token._.metaDados["palavra"] +\
-            token._.metaDados["verboData"]["obj"]["pessoa"] +\
+        palavraGlosa = token._.metaDados["verboData"]["pessoa"] + token._.metaDados["verboData"]["numero"] + \
+            token._.metaDados["palavra"] + token._.metaDados["verboData"]["obj"]["pessoa"] + \
             token._.metaDados["verboData"]["obj"]["numero"]
 
         token._.metaDados["palavra"] = palavraGlosa
