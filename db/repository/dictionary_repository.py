@@ -18,7 +18,7 @@ class DictionaryRepository:
                 )\
                 .all()
 
-    def selectPalavras(self, lemmas):
+    def selectPalavras(self, lemmas: list):
         if os.environ['LEXLIBRAS_VERBOSE'] == "1":
             print(f"Path {__file__}")
             print(f"Lemas recebido em selectPalavras: ")
@@ -56,7 +56,7 @@ class DictionaryRepository:
         result = None
         with DBConnectionHandler() as conn:
             # resp = conn.runSQLRaw("SELECT p.id, p.palavra, c.nome FROM palavras AS p, classes_gramaticais AS c IN ( :lemmas );", {"lemmas": palavrasCandidatas})
-            resp = None
+            resp = []
             try:
                 resp = conn.runSQLRaw(query)
                 self.lastResult = resp
