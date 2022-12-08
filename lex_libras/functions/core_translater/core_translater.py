@@ -1,11 +1,24 @@
 from db.repository.dictionary_repository import DictionaryRepository
 
+from lex_libras.dto.palavraCandidataDTO import palavraCandidataDTO
+from lex_libras.functions.core_translater.functions.encontrarAlias import encontrarAlias
+
 from .functions import *
 import os
 
 
 class CoreTranslater:
     lastQueryResult = None
+
+    candidateWords = []
+    isWordsFecthed = False
+    isWordsChecked = False
+
+    def __fetchCandidateWord(self):
+
+        # palavrasDB = self.__dictionaryRepository.selectPalavras(lemmas)
+        self.isWordsFecthed = True
+        return None
 
     print(f"LEXLIBRAS_VERBOSE: {os.environ.get('LEXLIBRAS_VERBOSE')}")
 
@@ -26,12 +39,20 @@ class CoreTranslater:
         None
         # print("Tchau")
 
-    @staticmethod
-    def returnPalavraElegida(Doc):
+    def getCandidateWord(self, Doc):
+        return Doc._.candidateWords.get()
+
         lemmas = []
         for token in Doc:
             if token._.eh_corresponde:
                 lemmas.append(token._.metaDados['palavra'])
+                Doc._.candidateWords.addNewCandidateWord(
+                    palavraCandidataDTO(
+                        token.i,
+                        token._.metaDados['palavra'],
+                        1
+                    )
+                )
 
         return lemmas
 
@@ -45,6 +66,26 @@ class CoreTranslater:
 
             token._.metaDados['palavra'] = token.lemma_.upper()
             token._.metaDados['claseGramatical'] = token.pos_
+            if token._.eh_corresponde:
+                Doc._.candidateWords.addNewCandidateWord(
+                    palavraCandidataDTO(
+                        token.i,
+                        token._.metaDados['palavra'],
+                        1
+                    )
+                )
+
+        print(
+            f"\n\t wordList LENGTH: {len(Doc._.candidateWords.wordList)}\n\n"
+        )
+        # Verifica flexões alternativas de palavra para econtrá-las no banco de dados
+        # Ex.: FALOU -> FALAR
+        encontrarAlias(Doc)  # type: None
+
+        print("PRINT NAS PALAVRAS CANDIDATAS PARA SEREM BUSCADAS NO BD (getCandidateWord):")
+        print("APÒS encontrarAlias(Doc)")
+        print(f"Length: {len(Doc._.candidateWords.get())}")
+        print(Doc._.candidateWords.get())
 
         # print("For lemmas\n")
         # for token in Doc:
@@ -56,7 +97,8 @@ class CoreTranslater:
         # Palavras que em PT-br são duas porém em LIBRAS são representada como uma (no caso um sinal)
         aglutinarPalavra(Doc)
 
-        lemmas = CoreTranslater.returnPalavraElegida(Doc)
+        lemmas = Doc._.candidateWords.get()
+
         if os.environ['LEXLIBRAS_VERBOSE'] == "1":
             print("\n\n#lemmas")
             print(lemmas)
@@ -74,22 +116,28 @@ class CoreTranslater:
 
         palavrasDB = self.__dictionaryRepository.selectPalavras(lemmas)
 
+        # Marcando quais palavras possui correspondente no BD
+
         ArrayPalavras = []
         try:
-            for p in palavrasDB:
-                ArrayPalavras.append(dict(p))
+            [ArrayPalavras.append(dict(p)) for p in palavrasDB]
         except Exception as e:
             print(e)
 
+        Doc._.candidateWords.electWord(Doc, ArrayPalavras)
+
+        print("Fasltly print of 'palavras'")
+        [print(f"\t{token._.metaDados['palavra']}") for token in Doc]
+
         if os.environ['LEXLIBRAS_VERBOSE'] == "1":
-            print("\nArrayPalavras")
+            print("\tArrayPalavras")
             print(ArrayPalavras)
 
-        for palavra in ArrayPalavras:
-            for token in Doc:
-                if palavra['palavra'] == token._.metaDados['palavra']:
-                    token._.metaDados['existeSinalLibras'] = True
-                    token._.metaDados['claseGramatical'] = palavra['flag']
+        # for palavra in ArrayPalavras:
+        #     for token in Doc:
+        #         if palavra['palavra'] == token._.metaDados['palavra']:
+        #             token._.metaDados['existeSinalLibras'] = True
+        #             token._.metaDados['claseGramatical'] = palavra['flag']
 
         # FAZENDO DATILOLOGIA
         for token in Doc:
