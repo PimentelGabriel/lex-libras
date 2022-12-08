@@ -3,6 +3,8 @@ import os
 import re
 import spacy
 from spacy.tokens import Doc, Token
+
+from lex_libras.functions.utils.candidateWordsMNG import candidateWordsMNG
 from .functions.graph_morph_changer import GraphMorphChanger
 from .functions.core_translater import CoreTranslater
 from .functions.utils.split_keep_signal import splitKeepSignal
@@ -26,6 +28,9 @@ DEVE SER MELHOR IMPLEMENTADO
 # Meta dado para sinalizar que a frase possui marcadores
 Doc.set_extension("possuiMarcador", default=False)
 
+# Gerenciador de meta dados de palvras candidatas
+Doc.set_extension("candidateWords", default=False)
+
 # Meta dado de todos os token para dizer que a palavra é traduzida e usada na glosa Libras
 Token.set_extension("eh_corresponde", default=False)
 
@@ -33,15 +38,17 @@ Token.set_extension("eh_corresponde", default=False)
 # Ex.:  PT-br               Glosa LIBRAS
 #       ELES DERAM PRA ELA  EL@S 3pDAR3s EL@
 #
-Token.set_extension("metaDados", default={
-    "palavra": None,
-    # Atributo para dizer se o sistema deve substituir os espaços vazios por '-' ou não linkavel (ehLinkavel == True: o sistema substitui)
-    "ehLinkavel": True,
-    "claseGramatical": None,
-    "ordem": None,
-    "existeSinalLibras": False,
-    "possuiMarcadorLIBRAS": False
-}
+Token.set_extension(
+    "metaDados",
+    default={
+        "palavra": None,
+        # Atributo para dizer se o sistema deve substituir os espaços vazios por '-' ou não linkavel (ehLinkavel == True: o sistema substitui)
+        "ehLinkavel": True,
+        "claseGramatical": None,
+        "ordem": None,
+        "existeSinalLibras": False,
+        "possuiMarcadorLIBRAS": False
+    }
 )
 
 nlp = spacy.load("pt_core_news_lg")
@@ -64,6 +71,8 @@ class TradutorLexLibras:
     def traduzir(self, text):
         #self.glosaVlibras = vlibras_tradutor.rule_translation(text)
         self.docSpaCy = nlp(text)
+        self.docSpaCy._.candidateWords = None
+        self.docSpaCy._.candidateWords = candidateWordsMNG()
 
         self.__core_translater()
         # self.__printMetaData()
@@ -97,17 +106,17 @@ class TradutorLexLibras:
         glosa = ""
         firstPass = True
         for w in self.docSpaCy:
-            if w._.eh_corresponde:
-                if w._.metaDados["ehLinkavel"]:
-                    w._.metaDados["palavra"] = re.sub(
-                        "\s", "-", w._.metaDados["palavra"])
-                if w.i == 0 or firstPass:
-                    glosa = w._.metaDados["palavra"]
+            if w._.eh_corresponde:  # type: ignore
+                if w._.metaDados["ehLinkavel"]:  # type: ignore
+                    w._.metaDados["palavra"] = re.sub(  # type: ignore
+                        "\s", "-", w._.metaDados["palavra"])  # type: ignore
+                if w.i == 0 or firstPass:  # type: ignore
+                    glosa = w._.metaDados["palavra"]  # type: ignore
                     firstPass = False
-                elif w.pos_ == 'PUNCT':
-                    glosa += w._.metaDados["palavra"]
+                elif w.pos_ == 'PUNCT':  # type: ignore
+                    glosa += w._.metaDados["palavra"]  # type: ignore
                 else:
-                    glosa += " " + w._.metaDados["palavra"]
+                    glosa += " " + w._.metaDados["palavra"]  # type: ignore
 
         return glosa
 
@@ -116,9 +125,13 @@ class TradutorLexLibras:
             self.selected = []
             flags = []
             for token in self.docSpaCy:
-                if token._.eh_corresponde:
-                    self.selected.append(token._.metaDados['palavra'])
-                    flags.append(token._.metaDados['existeSinalLibras'])
+                if token._.eh_corresponde:  # type: ignore
+                    self.selected.append(
+                        token._.metaDados['palavra']  # type: ignore
+                    )
+                    flags.append(
+                        token._.metaDados['existeSinalLibras']  # type: ignore
+                    )
 
             print(self.selected)
             print(flags)
