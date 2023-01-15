@@ -5,3 +5,4 @@ class palavraCandidataDTO:
         self.palavra = palavra
         self.peso = peso
         self.elegido = 0
+        self.span = False

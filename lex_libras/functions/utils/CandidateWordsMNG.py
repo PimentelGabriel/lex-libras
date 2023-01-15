@@ -1,14 +1,15 @@
+import os
 from lex_libras.dto import palavraCandidataDTO
 
 
-class candidateWordsMNG():
+class CandidateWordsMNG():
     def __init__(self) -> None:
         self.wordList = []
         self.disctincIndexList = []
         self.isWordsFecthed = False
         self.isWordsChecked = False
 
-    def addNewCandidateWord(self, tuple: palavraCandidataDTO):
+    def addNewCandidateWord(self, tuple: palavraCandidataDTO) -> int:
         tuple.i = len(self.wordList)
 
         found = False
@@ -25,6 +26,7 @@ class candidateWordsMNG():
 
         self.wordList.append(tuple)
 
+        return len(self.wordList)
         # for word in self.list:
 
     def get(self) -> list:
@@ -32,8 +34,9 @@ class candidateWordsMNG():
         for lemma in self.wordList:
             lemmas.append(lemma.palavra)
 
-        [print((t.palavra, t.idToken)) for t in self.wordList]
-        print(self.disctincIndexList)
+        if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+            [print((t.palavra, t.idToken)) for t in self.wordList]
+            print(self.disctincIndexList)
 
         return lemmas
 
@@ -42,8 +45,9 @@ class candidateWordsMNG():
 
         for lemma in lemmasFromDB:
             for w in self.wordList:
-                print(
-                    f"\t\tlemma['palavra'] == w.palavra => {lemma['palavra']} == {w.palavra}")
+                if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+                    print(
+                        f"\t\tlemma['palavra'] == w.palavra => {lemma['palavra']} == {w.palavra}")
                 if lemma['palavra'] == w.palavra:
                     w.elegido = 1
                     Doc[w.idToken]._.metaDados['claseGramatical'] = lemma['flag']
@@ -75,6 +79,14 @@ class candidateWordsMNG():
             Doc[idTokenHightest]._.metaDados["palavra"] = palavra
             Doc[idTokenHightest]._.metaDados['existeSinalLibras'] = True
 
+        for w in self.wordList:
+            if w.elegido == 1 and w.span:
+                Doc[w.span.start]._.metaDados["palavra"] = w.palavra
+                print(f"end: {(w.span.end+1)}, start: {w.span.start}")
+                for i in range(w.span.end - (w.span.start+1)):
+                    print(f"{Doc[i+1+w.span.start].text} - removed")
+                    Doc[i+1+w.span.start]._.eh_corresponde = False
+
     def getElectedWords(self, Doc):
         for idToken in self.disctincIndexList:
             words = []
@@ -95,6 +107,7 @@ class candidateWordsMNG():
                     palavra = w.palavra
 
             Doc[idTokenHightest]._.metaDados["palavra"] = palavra
+
 
             # indexList = []
             # for i in self.disctincIndexList:

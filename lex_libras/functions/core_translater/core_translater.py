@@ -6,6 +6,8 @@ from lex_libras.functions.core_translater.functions.encontrarAlias import encont
 from .functions import *
 import os
 
+from lex_libras.spacyProxy import matcher
+
 
 class CoreTranslater:
     lastQueryResult = None
@@ -57,12 +59,31 @@ class CoreTranslater:
         return lemmas
 
     def analisar(self, Doc):
+        captura = matcher(Doc)
+
+        # Encontra Substantivos Compostos, monsta-os e os procura no BD
+        for match in captura:
+            palavra = Doc[match[1]:match[2]]
+
+            size = Doc._.candidateWords.addNewCandidateWord(
+                palavraCandidataDTO(
+                    match[1],
+                    palavra.text.upper(),
+                    3
+                )
+            )
+
+            Doc._.candidateWords.wordList[size-1].span = palavra
+
         # TRIAGEM DE PALAVRAS QUE VÃO PARA A GLOSA
         # Deve-se selecionar quais palavras da sentença deve ser considerada
         for token in Doc:
             removeConj(token)
             removeArt(token)
             removeAdp(token)
+
+            # Seção de removedor de 2º geração
+            removeNSubj(token)
 
             token._.metaDados['palavra'] = token.lemma_.upper()
             token._.metaDados['claseGramatical'] = token.pos_
@@ -120,7 +141,7 @@ class CoreTranslater:
 
         ArrayPalavras = []
         try:
-            [ArrayPalavras.append(dict(p)) for p in palavrasDB]
+            [ArrayPalavras.append(dict(p)) for p in palavrasDB]  # type: ignore
         except Exception as e:
             print(e)
 

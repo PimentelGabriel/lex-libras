@@ -27,11 +27,15 @@ def analisarVerbo(token, Doc):
             token._.metaDados['ehLinkavel'] = False
             token._.metaDados['palavra'] = fetchInfinitiveForm(
                 token.lemma_) + " JÁ"
-            print(
-                f"\t\tENTROU NO APLICADOR DE JÁ: {token._.metaDados['palavra']}"
-            )
+
+            if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+                print(
+                    f"\t\tENTROU NO APLICADOR DE 'JÁ's: {token._.metaDados['palavra']}"
+                )
 
     # Obter flag do banco de dados para tratar adequadamente cada verbo
+
+    # Verbo conjugado segundo a pessoa do discurso
     if token._.metaDados["claseGramatical"] == 'VERB-P':
         if os.environ['LEXLIBRAS_VERBOSE'] == "1":
             print("Pêgo o verbo "+token.text)
@@ -117,7 +121,7 @@ def analisarVerbo(token, Doc):
                 f"O verbo '{token.text.upper()}' conjugado por locativo.\n\tTratativa para os verbos que são conjugado pelo locativo (VERB-L) não implementado")
 
     if token._.metaDados["claseGramatical"] == 'VERB':
-        pronoun = getPronouns(token)
+        pronoun: str = getPronouns(token)
         if pronoun:
             token._.metaDados["palavra"] = pronoun + \
                 " "+token._.metaDados["palavra"]

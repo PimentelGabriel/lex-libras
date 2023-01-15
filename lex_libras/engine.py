@@ -1,10 +1,10 @@
 #import vlibras_translate
 import os
 import re
-import spacy
+from .spacyProxy import spacy, nlp, matcher
 from spacy.tokens import Doc, Token
 
-from lex_libras.functions.utils.candidateWordsMNG import candidateWordsMNG
+from lex_libras.functions.utils.CandidateWordsMNG import CandidateWordsMNG
 from .functions.graph_morph_changer import GraphMorphChanger
 from .functions.core_translater import CoreTranslater
 from .functions.utils.split_keep_signal import splitKeepSignal
@@ -51,8 +51,6 @@ Token.set_extension(
     }
 )
 
-nlp = spacy.load("pt_core_news_lg")
-
 
 # from .functions.sintatic_organizer import sintaticOrganizer
 
@@ -72,7 +70,7 @@ class TradutorLexLibras:
         #self.glosaVlibras = vlibras_tradutor.rule_translation(text)
         self.docSpaCy = nlp(text)
         self.docSpaCy._.candidateWords = None
-        self.docSpaCy._.candidateWords = candidateWordsMNG()
+        self.docSpaCy._.candidateWords = CandidateWordsMNG()
 
         self.__core_translater()
         # self.__printMetaData()
@@ -133,8 +131,9 @@ class TradutorLexLibras:
                         token._.metaDados['existeSinalLibras']  # type: ignore
                     )
 
-            print(self.selected)
-            print(flags)
+            if os.environ['LEXLIBRAS_VERBOSE'] == "1":
+                print(self.selected)
+                print(flags)
 
     def setVerboseMode(self, boolFlag):
         if isinstance(boolFlag, bool):
