@@ -1,0 +1,40 @@
+FRASE 1:
+	Frase-ptBR: Vamos combater a dengue!
+	Saida espe: MOSQUITO VIR 1pVENCER2s
+	Saida real: IR 1pCOMBATER3s DENGUE
+
+FRASE 2:
+	Frase-ptBR: O mosquito da dengue nasce e se desenvolve em água parada!
+	Saida espe: ÁGUA LARGAD@ MOSQUITO SURGIR DESENVOLVER
+	Saida real: DENGUE NASCER SE DESENVOLVER ÁGUA PARAD@
+
+FRASE 3:
+	Frase-ptBR: Por isso temos que manter a caixa de água fechada!
+	Saida espe: ENTÃO POR-ISSO CAIXA PRECISAR objeto-plano-vertical TAMPAR
+	Saida real: ISSO TER MANTER CAIXA-DE-ÁGUA FECHAR
+
+FRASE 4:
+	Frase-ptBR: Tomar cuidado com vasos, garrafas, latas e pneus velhos!
+	Saida espe: CUIDADO OBJETO-ARREDONDADO-LONGO FLOR MARCADOR-1 VIDRO^OBJETO-CILÍNDRICO-ALONGADO MARCADOR-2 FERRO^OBJETO-MÉDIO MARCADOR-3 borracha^COISA-CIRCULAR VELH@
+	Saida real: TOMAR CUIDADO VASO++ MARCADOR-1, GARRAFA++ MARCADOR-2, LATA++ MARCADOR-3 PNEU++ VELH@ MARCADOR-4
+
+FRASE 5:
+	Frase-ptBR: Tudo que acumule água
+	Saida espe: TUDO ÁGUA DENTRO.
+	Saida real: TUDO ACUMULAR ÁGUA
+
+FRASE 6:
+	Frase-ptBR: Se você tiver febre alta, dores musculares, de cabeça, nos joelhos, cotovelos e mal estar em geral, procure serviços médicos
+	Saida espe: VOCÊ FEBRE ALT@ MÚSCULO-BRAÇO DOER CABEÇA^DOR JOELHO COTOVELO DOER M-A-L CORPO-TODO PROCURAR2s MÉDICO.
+	Saida real: TER FEBRE ALT@, DOR++ M-U-S-C-U-L-A-@, CABEÇA, JOELHO++, COTOVELO++ MAL ESTAR GERAL, PROCURAR SERVIÇO++ MÉDIC@
+
+FRASE 7:
+	Frase-ptBR: Falei que água é um perigo!
+	Saida espe: FALAR JÁ ÁGUA PERIGOS@!
+	Saida real: 1sFALAR ÁGUA SER PERIGO
+
+FRASE 8:
+	Frase-ptBR: Água parada, cascão! Água parada!
+	Saida espe: SÓ ÁGUA LARGAD@! ÁGUA LARGAD@!
+	Saida real: ÁGUA PARAD@, CASCÃO ÁGUA PARAD@
+
