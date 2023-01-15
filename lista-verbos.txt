@@ -1,0 +1,1563 @@
++--------------------+-------+--------+-----------------------------------------------------------+
+| palavra            | nome  | flag   | descricao                                                 |
++--------------------+-------+--------+-----------------------------------------------------------+
+| ABAFAR             | VERBO | VERB   |                                                           |
+| ABANAR             | VERBO | VERB   |                                                           |
+| ABANDONAR          | VERBO | VERB   |                                                           |
+| ABANDONAR          | VERBO | VERB   |                                                           |
+| ABDICAR            | VERBO | VERB   |                                                           |
+| ABENÇOAR1          | VERBO | VERB   |                                                           |
+| ABENÇOAR2          | VERBO | VERB   |                                                           |
+| ABOCANHAR          | VERBO | VERB   |                                                           |
+| ABONAR             | VERBO | VERB   |                                                           |
+| ABORRECER          | VERBO | VERB   |                                                           |
+| ABORTAR            | VERBO | VERB   |                                                           |
+| ABORTAR            | VERBO | VERB   |                                                           |
+| ABOTOAR            | VERBO | VERB   |                                                           |
+| ABRAÇAR            | VERBO | VERB   |                                                           |
+| ABREVIAR           | VERBO | VERB   |                                                           |
+| ABRIGAR            | VERBO | VERB   |                                                           |
+| ABRIR              | VERBO | VERB   |                                                           |
+| ABRIR              | VERBO | VERB   |                                                           |
+| ABRIR              | VERBO | VERB   |                                                           |
+| ABRIR              | VERBO | VERB   |                                                           |
+| ABRIR              | VERBO | VERB   |                                                           |
+| ABSOLVER           | VERBO | VERB   |                                                           |
+| ABSORVER           | VERBO | VERB   |                                                           |
+| ABSORVER           | VERBO | VERB   |                                                           |
+| ABSTER             | VERBO | VERB   |                                                           |
+| ABUSAR             | VERBO | VERB   |                                                           |
+| ACABAR             | VERBO | VERB   |                                                           |
+| ACABAR             | VERBO | VERB   |                                                           |
+| ACABAR             | VERBO | VERB   |                                                           |
+| ACABAR             | VERBO | VERB   |                                                           |
+| ACALENTAR          | VERBO | VERB   |                                                           |
+| ACALMAR            | VERBO | VERB   |                                                           |
+| ACALMAR            | VERBO | VERB   |                                                           |
+| ACAMPAR            | VERBO | VERB   |                                                           |
+| ACARICIAR          | VERBO | VERB   |                                                           |
+| ACASALAR           | VERBO | VERB   |                                                           |
+| ACATAR             | VERBO | VERB   |                                                           |
+| ACAUTELAR          | VERBO | VERB   |                                                           |
+| ACEITAR            | VERBO | VERB   |                                                           |
+| ACELERAR           | VERBO | VERB   |                                                           |
+| ACELERAR           | VERBO | VERB   |                                                           |
+| ACENAR             | VERBO | VERB   |                                                           |
+| ACENDER FAROL      | VERBO | VERB   |                                                           |
+| ACENDER ISQUEIRO   | VERBO | VERB   |                                                           |
+| ACENDER LUZ        | VERBO | VERB   |                                                           |
+| ACENDER VELA       | VERBO | VERB   |                                                           |
+| ACERCAR            | VERBO | VERB   |                                                           |
+| ACERTAR            | VERBO | VERB   |                                                           |
+| ACERTAR            | VERBO | VERB   |                                                           |
+| ACHAR              | VERBO | VERB   |                                                           |
+| ACHAR              | VERBO | VERB   |                                                           |
+| ACOMODAR           | VERBO | VERB   |                                                           |
+| ACOMPANHAR         | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ACOMPANHAR         | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ACONCHEGAR         | VERBO | VERB   |                                                           |
+| ACONSELHAR         | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| ACONTECER          | VERBO | VERB   |                                                           |
+| ACONTECER          | VERBO | VERB   |                                                           |
+| ACONTECER          | VERBO | VERB   |                                                           |
+| ACORDAR            | VERBO | VERB   |                                                           |
+| ACORDAR            | VERBO | VERB   |                                                           |
+| ACORDAR            | VERBO | VERB   |                                                           |
+| ACORRENTAR         | VERBO | VERB   |                                                           |
+| ACOSTUMAR          | VERBO | VERB   |                                                           |
+| ACOTOVELAR         | VERBO | VERB   |                                                           |
+| ACREDITAR          | VERBO | VERB   |                                                           |
+| ACRESCENTAR        | VERBO | VERB   |                                                           |
+| ACUMULAR           | VERBO | VERB   |                                                           |
+| ACUSAR             | VERBO | VERB   |                                                           |
+| ADERNAR            | VERBO | VERB   |                                                           |
+| ADIAR              | VERBO | VERB   |                                                           |
+| ADICIONAR          | VERBO | VERB   |                                                           |
+| ADICIONAR          | VERBO | VERB   |                                                           |
+| ADIVINHAR          | VERBO | VERB   |                                                           |
+| ADMINISTRAR        | VERBO | VERB   |                                                           |
+| ADMIRAR            | VERBO | VERB   |                                                           |
+| ADMITIR            | VERBO | VERB   |                                                           |
+| ADMITIR            | VERBO | VERB   |                                                           |
+| ADOÇAR             | VERBO | VERB   |                                                           |
+| ADOECER            | VERBO | VERB   |                                                           |
+| ADOIDAR            | VERBO | VERB   |                                                           |
+| ADORAR             | VERBO | VERB   |                                                           |
+| ADORAR             | VERBO | VERB   |                                                           |
+| ADORMECER          | VERBO | VERB   |                                                           |
+| ADOTAR             | VERBO | VERB   |                                                           |
+| ADULAR             | VERBO | VERB   |                                                           |
+| ADVERTIR           | VERBO | VERB   |                                                           |
+| ADVERTIR           | VERBO | VERB   |                                                           |
+| AFASTAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| AFASTAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| AFERIR             | VERBO | VERB   |                                                           |
+| AFERIR             | VERBO | VERB   |                                                           |
+| AFIAR              | VERBO | VERB   |                                                           |
+| AFIVELAR           | VERBO | VERB   |                                                           |
+| AFIXAR             | VERBO | VERB   |                                                           |
+| AFOCINHAR          | VERBO | VERB   |                                                           |
+| AFOGAR             | VERBO | VERB   |                                                           |
+| AFOGAR             | VERBO | VERB   |                                                           |
+| AFROUXAR           | VERBO | VERB   |                                                           |
+| AFUNDAR            | VERBO | VERB   |                                                           |
+| AGACHAR            | VERBO | VERB   |                                                           |
+| AGARRAR            | VERBO | VERB   |                                                           |
+| AGASALHAR          | VERBO | VERB   |                                                           |
+| AGENDAR            | VERBO | VERB   |                                                           |
+| AGRADAR            | VERBO | VERB   |                                                           |
+| AGRADECER          | VERBO | VERB   |                                                           |
+| AGREDIR            | VERBO | VERB   |                                                           |
+| AGRUPAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| AGUARDAR           | VERBO | VERB   |                                                           |
+| AGÜENTAR1          | VERBO | VERB   |                                                           |
+| AGÜENTAR2          | VERBO | VERB   |                                                           |
+| AGÜENTAR3          | VERBO | VERB   |                                                           |
+| AINDA NÃO          | VERBO | VERB   |                                                           |
+| AJOELHAR           | VERBO | VERB   |                                                           |
+| AJUDAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| AJUDAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| AJUNTAR            | VERBO | VERB   |                                                           |
+| ALASTRAR           | VERBO | VERB   |                                                           |
+| ALCANÇAR1          | VERBO | VERB   |                                                           |
+| ALCANÇAR2          | VERBO | VERB   |                                                           |
+| ALCANÇAR3          | VERBO | VERB   |                                                           |
+| ALEIJAR            | VERBO | VERB   |                                                           |
+| ALERTAR            | VERBO | VERB   |                                                           |
+| ALERTAR            | VERBO | VERB   |                                                           |
+| ALIMENTAR          | VERBO | VERB   |                                                           |
+| ALISAR             | VERBO | VERB   |                                                           |
+| ALISTAR            | VERBO | VERB   |                                                           |
+| ALISTAR            | VERBO | VERB   |                                                           |
+| ALIVIAR            | VERBO | VERB   |                                                           |
+| ALMEJAR            | VERBO | VERB   |                                                           |
+| ALMOÇAR            | VERBO | VERB   |                                                           |
+| ALTERAR            | VERBO | VERB   |                                                           |
+| ALTERNAR           | VERBO | VERB   |                                                           |
+| ALUGAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| AMAMENTAR          | VERBO | VERB   |                                                           |
+| AMANHECER          | VERBO | VERB   |                                                           |
+| AMANSAR            | VERBO | VERB   |                                                           |
+| AMAR               | VERBO | VERB   |                                                           |
+| AMARRAR            | VERBO | VERB   |                                                           |
+| AMASSAR            | VERBO | VERB   |                                                           |
+| AMASSAR            | VERBO | VERB   |                                                           |
+| AMEAÇAR1           | VERBO | VERB   |                                                           |
+| AMEAÇAR2           | VERBO | VERB   |                                                           |
+| AMOLAR             | VERBO | VERB   |                                                           |
+| AMOLAR             | VERBO | VERB   |                                                           |
+| AMONTOAR           | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| AMPLIAR            | VERBO | VERB   |                                                           |
+| AMPUTAR            | VERBO | VERB   |                                                           |
+| ANALISAR           | VERBO | VERB   |                                                           |
+| ANCORAR            | VERBO | VERB   |                                                           |
+| ANDAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ANDAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ANDAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ANDAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ANDAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ANDAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ANDAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ANGUSTIAR          | VERBO | VERB   |                                                           |
+| ANIMAR             | VERBO | VERB   |                                                           |
+| ANIQUILAR          | VERBO | VERB   |                                                           |
+| ANOTAR             | VERBO | VERB   |                                                           |
+| ANOTAR             | VERBO | VERB   |                                                           |
+| ANOTAR             | VERBO | VERB   |                                                           |
+| ANTECEDER          | VERBO | VERB   |                                                           |
+| ANTECIPAR          | VERBO | VERB   |                                                           |
+| ANTECIPAR          | VERBO | VERB   |                                                           |
+| ANULAR             | VERBO | VERB   |                                                           |
+| ANUNCIAR           | VERBO | VERB   |                                                           |
+| APAGAR LUZ         | VERBO | VERB   |                                                           |
+| APAGAR VELA        | VERBO | VERB   |                                                           |
+| APAIXONAR          | VERBO | VERB   |                                                           |
+| APALPAR            | VERBO | VERB   |                                                           |
+| APANHAR            | VERBO | VERB   |                                                           |
+| APANHAR            | VERBO | VERB   |                                                           |
+| APARAFUSAR         | VERBO | VERB   |                                                           |
+| APARECER           | VERBO | VERB   |                                                           |
+| APARECER           | VERBO | VERB   |                                                           |
+| APAVORAR           | VERBO | VERB   |                                                           |
+| APEGAR             | VERBO | VERB   |                                                           |
+| APELAR             | VERBO | VERB   |                                                           |
+| APELIDAR           | VERBO | VERB   |                                                           |
+| APELIDAR           | VERBO | VERB   |                                                           |
+| APERFEIÇOAR1       | VERBO | VERB   |                                                           |
+| APERFEIÇOAR2       | VERBO | VERB   |                                                           |
+| APERTAR            | VERBO | VERB   |                                                           |
+| APITAR             | VERBO | VERB   |                                                           |
+| APLAUDIR           | VERBO | VERB   |                                                           |
+| APLAUDIR           | VERBO | VERB   |                                                           |
+| APLICAR            | VERBO | VERB   |                                                           |
+| APLICAR            | VERBO | VERB   |                                                           |
+| APODERAR           | VERBO | VERB   |                                                           |
+| APODRECER          | VERBO | VERB   |                                                           |
+| APODRECER          | VERBO | VERB   |                                                           |
+| APOIAR             | VERBO | VERB   |                                                           |
+| APOIAR             | VERBO | VERB   |                                                           |
+| APONTAR            | VERBO | VERB   |                                                           |
+| APONTAR            | VERBO | VERB   |                                                           |
+| APOSENTAR          | VERBO | VERB   |                                                           |
+| APOSTAR            | VERBO | VERB   |                                                           |
+| APRECIAR           | VERBO | VERB   |                                                           |
+| APREENDER          | VERBO | VERB   |                                                           |
+| APRENDER           | VERBO | VERB   |                                                           |
+| APRESENTAR         | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| APRESENTAR         | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| APRESENTAR         | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| APRESSAR           | VERBO | VERB   |                                                           |
+| APRESSAR           | VERBO | VERB   |                                                           |
+| APRISIONAR         | VERBO | VERB   |                                                           |
+| APROFUNDAR         | VERBO | VERB   |                                                           |
+| APROVAR            | VERBO | VERB   |                                                           |
+| APROVAR            | VERBO | VERB   |                                                           |
+| APROVEITAR         | VERBO | VERB   |                                                           |
+| APROVEITAR         | VERBO | VERB   |                                                           |
+| APROXIMAR          | VERBO | VERB   |                                                           |
+| APROXIMAR          | VERBO | VERB   |                                                           |
+| APTO               | VERBO | VERB   |                                                           |
+| AQUECER            | VERBO | VERB   |                                                           |
+| ARAR               | VERBO | VERB   |                                                           |
+| ARBITRAR           | VERBO | VERB   |                                                           |
+| ARDER              | VERBO | VERB   |                                                           |
+| ARDER              | VERBO | VERB   |                                                           |
+| ARDER              | VERBO | VERB   |                                                           |
+| ARQUEJAR           | VERBO | VERB   |                                                           |
+| ARQUIVAR           | VERBO | VERB   |                                                           |
+| ARRANCAR           | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| ARRANHAR           | VERBO | VERB   |                                                           |
+| ARRANJAR           | VERBO | VERB   |                                                           |
+| ARRANJAR           | VERBO | VERB   |                                                           |
+| ARRASTAR           | VERBO | VERB   |                                                           |
+| ARREBENTAR         | VERBO | VERB   |                                                           |
+| ARREMATAR          | VERBO | VERB   |                                                           |
+| ARREMESSAR         | VERBO | VERB   |                                                           |
+| ARREPENDER         | VERBO | VERB   |                                                           |
+| ARREPIAR           | VERBO | VERB   |                                                           |
+| ARROLAR            | VERBO | VERB   |                                                           |
+| ARROMBAR           | VERBO | VERB   |                                                           |
+| ARROTAR            | VERBO | VERB   |                                                           |
+| ARRUMAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ARRUMAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ARRUMAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ARTICULAR          | VERBO | VERB   |                                                           |
+| ASCENDER           | VERBO | VERB   |                                                           |
+| ASFIXIAR           | VERBO | VERB   |                                                           |
+| ASPIRAR            | VERBO | VERB   |                                                           |
+| ASSALTAR           | VERBO | VERB   |                                                           |
+| ASSAR              | VERBO | VERB   |                                                           |
+| ASSAR              | VERBO | VERB   |                                                           |
+| ASSASSINAR         | VERBO | VERB   |                                                           |
+| ASSIMILAR          | VERBO | VERB   |                                                           |
+| ASSINAR            | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| ASSISTIR           | VERBO | VERB   |                                                           |
+| ASSISTIR           | VERBO | VERB   |                                                           |
+| ASSISTIR           | VERBO | VERB   |                                                           |
+| ASSOAR             | VERBO | VERB   |                                                           |
+| ASSOBIAR           | VERBO | VERB   |                                                           |
+| ASSOCIAR           | VERBO | VERB   |                                                           |
+| ASSUMIR            | VERBO | VERB   |                                                           |
+| ASSUMIR            | VERBO | VERB   |                                                           |
+| ASSUMIR            | VERBO | VERB   |                                                           |
+| ASSUSTAR           | VERBO | VERB   |                                                           |
+| ATACAR             | VERBO | VERB   |                                                           |
+| ATACAR             | VERBO | VERB   |                                                           |
+| ATACAR             | VERBO | VERB   |                                                           |
+| ATARRAXAR          | VERBO | VERB   |                                                           |
+| ATEAR              | VERBO | VERB   |                                                           |
+| ATESTAR            | VERBO | VERB   |                                                           |
+| ATINGIR            | VERBO | VERB   |                                                           |
+| ATIRAR             | VERBO | VERB   |                                                           |
+| ATIRAR             | VERBO | VERB   |                                                           |
+| ATRAPALHAR         | VERBO | VERB   |                                                           |
+| ATRAPALHAR         | VERBO | VERB   |                                                           |
+| ATRASAR            | VERBO | VERB   |                                                           |
+| ATRAVESSAR         | VERBO | VERB   |                                                           |
+| ATROPELAR          | VERBO | VERB   |                                                           |
+| ATUAR              | VERBO | VERB   |                                                           |
+| AUMENTAR           | VERBO | VERB   |                                                           |
+| AUMENTAR           | VERBO | VERB   |                                                           |
+| AUMENTAR           | VERBO | VERB   |                                                           |
+| AUMENTAR           | VERBO | VERB   |                                                           |
+| AUTENTICAR         | VERBO | VERB   |                                                           |
+| AUTORIZAR          | VERBO | VERB   |                                                           |
+| AUXILIAR           | VERBO | VERB   |                                                           |
+| AVALIAR            | VERBO | VERB   |                                                           |
+| AVALIAR            | VERBO | VERB   |                                                           |
+| AVANÇAR1           | VERBO | VERB   |                                                           |
+| AVANÇAR2           | VERBO | VERB   |                                                           |
+| AVISAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| BABAR              | VERBO | VERB   |                                                           |
+| BAGUNÇAR           | VERBO | VERB   |                                                           |
+| BAIXAR             | VERBO | VERB   |                                                           |
+| BAJULAR            | VERBO | VERB   |                                                           |
+| BALANÇAR2          | VERBO | VERB   |                                                           |
+| BALANÇAR3          | VERBO | VERB   |                                                           |
+| BALBUCIAR          | VERBO | VERB   |                                                           |
+| BALBUCIAR          | VERBO | VERB   |                                                           |
+| BAMBOLEAR          | VERBO | VERB   |                                                           |
+| BANHAR             | VERBO | VERB   |                                                           |
+| BANIR              | VERBO | VERB   |                                                           |
+| BATER              | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| BATER              | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| BATER              | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| BATIZAR            | VERBO | VERB   |                                                           |
+| BATIZAR            | VERBO | VERB   |                                                           |
+| BATUCAR            | VERBO | VERB   |                                                           |
+| BEBER              | VERBO | VERB   |                                                           |
+| BEBER              | VERBO | VERB   |                                                           |
+| BEBER              | VERBO | VERB   |                                                           |
+| BEBER              | VERBO | VERB   |                                                           |
+| BEBER              | VERBO | VERB   |                                                           |
+| BEIJAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| BEIJAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| BEIJAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| BELISCAR           | VERBO | VERB   |                                                           |
+| BENZER             | VERBO | VERB   |                                                           |
+| BERRAR             | VERBO | VERB   |                                                           |
+| BICAR              | VERBO | VERB   |                                                           |
+| BISBILHOTAR        | VERBO | VERB   |                                                           |
+| BLASFEMAR          | VERBO | VERB   |                                                           |
+| BLOQUEAR           | VERBO | VERB   |                                                           |
+| BOCEJAR            | VERBO | VERB   |                                                           |
+| BOCEJAR            | VERBO | VERB   |                                                           |
+| BOIAR              | VERBO | VERB   |                                                           |
+| BORBULHAR          | VERBO | VERB   |                                                           |
+| BORDAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| BORRAR             | VERBO | VERB   |                                                           |
+| BORRIFAR           | VERBO | VERB   |                                                           |
+| BOTAR              | VERBO | VERB   |                                                           |
+| BOTAR              | VERBO | VERB   |                                                           |
+| BRADAR             | VERBO | VERB   |                                                           |
+| BRIGAR             | VERBO | VERB   |                                                           |
+| BRIGAR             | VERBO | VERB   |                                                           |
+| BRIGAR             | VERBO | VERB   |                                                           |
+| BRILHAR            | VERBO | VERB   |                                                           |
+| BRINCAR            | VERBO | VERB   |                                                           |
+| BRINDAR            | VERBO | VERB   |                                                           |
+| BRONZEAR           | VERBO | VERB   |                                                           |
+| BROTAR             | VERBO | VERB   |                                                           |
+| BUFAR              | VERBO | VERB   |                                                           |
+| BUSCAR             | VERBO | VERB   |                                                           |
+| BUZINAR            | VERBO | VERB   |                                                           |
+| CABELO             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| CABER              | VERBO | VERB   |                                                           |
+| CAÇAR              | VERBO | VERB   |                                                           |
+| CACAREJAR          | VERBO | VERB   |                                                           |
+| CAÇOAR             | VERBO | VERB   |                                                           |
+| CAÇULA             | VERBO | VERB   |                                                           |
+| CAGAR              | VERBO | VERB   |                                                           |
+| CAIR               | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| CAIR               | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| CALAR              | VERBO | VERB   |                                                           |
+| CALAR A BOCA       | VERBO | VERB   |                                                           |
+| CALÇAR             | VERBO | VERB   |                                                           |
+| CALCULAR           | VERBO | VERB   |                                                           |
+| CAMBALEAR          | VERBO | VERB   |                                                           |
+| CAMINHAR           | VERBO | VERB   |                                                           |
+| CAMUFLAR           | VERBO | VERB   |                                                           |
+| CANCELAR           | VERBO | VERB   |                                                           |
+| CANCELAR           | VERBO | VERB   |                                                           |
+| CANSAR             | VERBO | VERB   |                                                           |
+| CANTAR             | VERBO | VERB   |                                                           |
+| CAPENGAR           | VERBO | VERB   |                                                           |
+| CAPOTAR            | VERBO | VERB   |                                                           |
+| CAPRICHAR          | VERBO | VERB   |                                                           |
+| CAPTAR             | VERBO | VERB   |                                                           |
+| CARIMBAR           | VERBO | VERB   |                                                           |
+| CARIMBAR           | VERBO | VERB   |                                                           |
+| CARREGAR           | VERBO | VERB   |                                                           |
+| CASAR              | VERBO | VERB   |                                                           |
+| CASTIGAR           | VERBO | VERB   |                                                           |
+| CASTRAR            | VERBO | VERB   |                                                           |
+| CAVALGAR           | VERBO | VERB   |                                                           |
+| CEIFAR             | VERBO | VERB   |                                                           |
+| CENSURAR           | VERBO | VERB   |                                                           |
+| CERCAR             | VERBO | VERB   |                                                           |
+| CERTIFICAR         | VERBO | VERB   |                                                           |
+| CHAMAR             | VERBO | VERB   |                                                           |
+| CHAMAR             | VERBO | VERB   |                                                           |
+| CHAMAR             | VERBO | VERB   |                                                           |
+| CHATEAR            | VERBO | VERB   |                                                           |
+| CHEGAR             | VERBO | VERB   |                                                           |
+| CHEGAR             | VERBO | VERB   |                                                           |
+| CHEGAR             | VERBO | VERB   |                                                           |
+| CHEIRAR            | VERBO | VERB   |                                                           |
+| CHICOTEAR          | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| CHOCAR             | VERBO | VERB   |                                                           |
+| CHOCAR             | VERBO | VERB   |                                                           |
+| CHOCAR             | VERBO | VERB   |                                                           |
+| CHORAR             | VERBO | VERB   |                                                           |
+| CHOVER             | VERBO | VERB   |                                                           |
+| CHUPAR LARANJA     | VERBO | VERB   |                                                           |
+| CHUPAR PIRULITO    | VERBO | VERB   |                                                           |
+| CHUTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| CHUTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| CIRCULAR           | VERBO | VERB   |                                                           |
+| CIRCUNCIDAR        | VERBO | VERB   |                                                           |
+| CISCAR             | VERBO | VERB   |                                                           |
+| CLASSIFICAR        | VERBO | VERB   |                                                           |
+| COAGIR             | VERBO | VERB   |                                                           |
+| COAR               | VERBO | VERB   |                                                           |
+| COBIÇAR            | VERBO | VERB   |                                                           |
+| COBRAR             | VERBO | VERB   |                                                           |
+| COBRAR             | VERBO | VERB   |                                                           |
+| COBRIR             | VERBO | VERB   |                                                           |
+| COBRIR             | VERBO | VERB   |                                                           |
+| COBRIR             | VERBO | VERB   |                                                           |
+| COÇAR              | VERBO | VERB   |                                                           |
+| COCHICHAR          | VERBO | VERB   |                                                           |
+| COCHILAR           | VERBO | VERB   |                                                           |
+| COINCIDIR          | VERBO | VERB   |                                                           |
+| COLABORAR          | VERBO | VERB   |                                                           |
+| COLHER             | VERBO | VERB   |                                                           |
+| COLIDIR            | VERBO | VERB   |                                                           |
+| COLOCAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| COLOCAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| COLORIR            | VERBO | VERB   |                                                           |
+| COMANDAR           | VERBO | VERB   |                                                           |
+| COMBATER           | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| COMBINAR           | VERBO | VERB   |                                                           |
+| COMBINAR           | VERBO | VERB   |                                                           |
+| COMEÇAR1           | VERBO | VERB   |                                                           |
+| COMEÇAR2           | VERBO | VERB   |                                                           |
+| COMEMORAR          | VERBO | VERB   |                                                           |
+| COMENTAR           | VERBO | VERB   |                                                           |
+| COMER              | VERBO | VERB   |                                                           |
+| COMOVER            | VERBO | VERB   |                                                           |
+| COMPADECER         | VERBO | VERB   |                                                           |
+| COMPARAR           | VERBO | VERB   |                                                           |
+| COMPARECER         | VERBO | VERB   |                                                           |
+| COMPENSAR          | VERBO | VERB   |                                                           |
+| COMPETIR           | VERBO | VERB   |                                                           |
+| COMPLETAR          | VERBO | VERB   |                                                           |
+| COMPORTAR          | VERBO | VERB   |                                                           |
+| COMPRAR            | VERBO | VERB   |                                                           |
+| COMPREENDER        | VERBO | VERB   |                                                           |
+| COMUNGAR           | VERBO | VERB   |                                                           |
+| COMUNICAR          | VERBO | VERB   |                                                           |
+| CONCENTRAR         | VERBO | VERB   |                                                           |
+| CONCLUIR           | VERBO | VERB   |                                                           |
+| CONCORDAR          | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| CONCORRER          | VERBO | VERB   |                                                           |
+| CONFECCIONAR       | VERBO | VERB   |                                                           |
+| CONFEITAR          | VERBO | VERB   |                                                           |
+| CONFERENCIAR       | VERBO | VERB   |                                                           |
+| CONFERIR           | VERBO | VERB   |                                                           |
+| CONFESSAR          | VERBO | VERB   |                                                           |
+| CONFIAR            | VERBO | VERB   |                                                           |
+| CONFIRMAR          | VERBO | VERB   |                                                           |
+| CONFISCAR          | VERBO | VERB   |                                                           |
+| CONFORMAR          | VERBO | VERB   |                                                           |
+| CONFORTAR          | VERBO | VERB   |                                                           |
+| CONFRONTAR         | VERBO | VERB   |                                                           |
+| CONFUNDIR          | VERBO | VERB   |                                                           |
+| CONGELAR           | VERBO | VERB   |                                                           |
+| CONHECER           | VERBO | VERB   |                                                           |
+| CONQUISTAR         | VERBO | VERB   |                                                           |
+| CONSEGUIR          | VERBO | VERB   |                                                           |
+| CONSERTAR          | VERBO | VERB   |                                                           |
+| CONSERVAR          | VERBO | VERB   |                                                           |
+| CONSOLAR           | VERBO | VERB   |                                                           |
+| CONSTRUIR          | VERBO | VERB   |                                                           |
+| CONSULTAR          | VERBO | VERB   |                                                           |
+| CONTAMINAR         | VERBO | VERB   |                                                           |
+| CONTAR             | VERBO | VERB   |                                                           |
+| CONTAR             | VERBO | VERB   |                                                           |
+| CONTAR             | VERBO | VERB   |                                                           |
+| CONTATAR           | VERBO | VERB   |                                                           |
+| CONTINUAR          | VERBO | VERB   |                                                           |
+| CONTRATAR          | VERBO | VERB   |                                                           |
+| CONTRATAR          | VERBO | VERB   |                                                           |
+| CONTRIBUIR         | VERBO | VERB   |                                                           |
+| CONVENCER          | VERBO | VERB   |                                                           |
+| CONVENTO           | VERBO | VERB   |                                                           |
+| CONVERSAR          | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| CONVERTER          | VERBO | VERB   |                                                           |
+| CONVIDAR           | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| COPIAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| CORRER             | VERBO | VERB   |                                                           |
+| CORRER             | VERBO | VERB   |                                                           |
+| CORRER             | VERBO | VERB   |                                                           |
+| CORRESPONDER       | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| CORRESPONDER       | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| CORRIGIR           | VERBO | VERB   |                                                           |
+| CORROMPER          | VERBO | VERB   |                                                           |
+| CORTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| CORTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| CORTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| COSTURAR           | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| COSTURAR           | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| COXEAR             | VERBO | VERB   |                                                           |
+| COZINHAR           | VERBO | VERB   |                                                           |
+| CRAVAR             | VERBO | VERB   |                                                           |
+| CRER               | VERBO | VERB   |                                                           |
+| CRESCER            | VERBO | VERB   |                                                           |
+| CRESCER            | VERBO | VERB   |                                                           |
+| CRIAR              | VERBO | VERB   |                                                           |
+| CRIAR              | VERBO | VERB   |                                                           |
+| CRIAR              | VERBO | VERB   |                                                           |
+| CRIAR              | VERBO | VERB   |                                                           |
+| CRITICAR           | VERBO | VERB   |                                                           |
+| CRUCIFICAR         | VERBO | VERB   |                                                           |
+| CRUZAR             | VERBO | VERB   |                                                           |
+| CRUZAR             | VERBO | VERB   |                                                           |
+| CUIDAR             | VERBO | VERB   |                                                           |
+| CUIDAR             | VERBO | VERB   |                                                           |
+| CULPA              | VERBO | VERB   |                                                           |
+| CUMPRIMENTAR       | VERBO | VERB   |                                                           |
+| CURAR              | VERBO | VERB   |                                                           |
+| CURVAR             | VERBO | VERB   |                                                           |
+| CURVAR             | VERBO | VERB   |                                                           |
+| CUSPIR             | VERBO | VERB   |                                                           |
+| CUSTAR             | VERBO | VERB   |                                                           |
+| CUTUCAR            | VERBO | VERB   |                                                           |
+| DANÇAR1            | VERBO | VERB   |                                                           |
+| DANÇAR2            | VERBO | VERB   |                                                           |
+| DANIFICAR          | VERBO | VERB   |                                                           |
+| DAR                | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| DAR                | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| DATAR              | VERBO | VERB   |                                                           |
+| DATILOGRAFAR       | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| DEBATER            | VERBO | VERB   |                                                           |
+| DEBITAR            | VERBO | VERB   |                                                           |
+| DEBOCHAR           | VERBO | VERB   |                                                           |
+| DEBRUÇAR           | VERBO | VERB   |                                                           |
+| DECAIR             | VERBO | VERB   |                                                           |
+| DECAPITAR          | VERBO | VERB   |                                                           |
+| DECEPAR            | VERBO | VERB   |                                                           |
+| DECEPCIONAR        | VERBO | VERB   |                                                           |
+| DECIDIR            | VERBO | VERB   |                                                           |
+| DECIFRAR           | VERBO | VERB   |                                                           |
+| DECLARAR           | VERBO | VERB   |                                                           |
+| DECOLAR            | VERBO | VERB   |                                                           |
+| DECOMPOR           | VERBO | VERB   |                                                           |
+| DECORAR            | VERBO | VERB   |                                                           |
+| DECORAR            | VERBO | VERB   |                                                           |
+| DECRETAR           | VERBO | VERB   |                                                           |
+| DEDICAR            | VERBO | VERB   |                                                           |
+| DEDILHAR           | VERBO | VERB   |                                                           |
+| DEDURAR            | VERBO | VERB   |                                                           |
+| DEDUZIR            | VERBO | VERB   |                                                           |
+| DEFECAR            | VERBO | VERB   |                                                           |
+| DEFENDER           | VERBO | VERB   |                                                           |
+| DEFENDER           | VERBO | VERB   |                                                           |
+| DEFINHAR           | VERBO | VERB   |                                                           |
+| DEFINIR            | VERBO | VERB   |                                                           |
+| DEFORMAR           | VERBO | VERB   |                                                           |
+| DEGLUTIR           | VERBO | VERB   |                                                           |
+| DEGOLAR            | VERBO | VERB   |                                                           |
+| DEGUSTAR           | VERBO | VERB   |                                                           |
+| DEITAR             | VERBO | VERB   |                                                           |
+| DEITAR             | VERBO | VERB   |                                                           |
+| DEIXAR             | VERBO | VERB   |                                                           |
+| DEIXAR             | VERBO | VERB   |                                                           |
+| DEIXAR             | VERBO | VERB   |                                                           |
+| DELATAR            | VERBO | VERB   |                                                           |
+| DELETAR            | VERBO | VERB   |                                                           |
+| DEMITIR            | VERBO | VERB   |                                                           |
+| DEMOLIR            | VERBO | VERB   |                                                           |
+| DEMONSTRAR         | VERBO | VERB   |                                                           |
+| DEMORAR            | VERBO | VERB   |                                                           |
+| DENODAR            | VERBO | VERB   |                                                           |
+| DENOMINAR          | VERBO | VERB   |                                                           |
+| DENUNCIAR          | VERBO | VERB   |                                                           |
+| DEPENAR            | VERBO | VERB   |                                                           |
+| DEPENDER           | VERBO | VERB   |                                                           |
+| DEPILAR            | VERBO | VERB   |                                                           |
+| DEPOSITAR          | VERBO | VERB   |                                                           |
+| DERRAMAR           | VERBO | VERB   |                                                           |
+| DERRAPAR           | VERBO | VERB   |                                                           |
+| DERRETER           | VERBO | VERB   |                                                           |
+| DERROTAR           | VERBO | VERB   |                                                           |
+| DERROTAR           | VERBO | VERB   |                                                           |
+| DERRUBAR           | VERBO | VERB   |                                                           |
+| DESABAFAR          | VERBO | VERB   |                                                           |
+| DESABAR            | VERBO | VERB   |                                                           |
+| DESABOTOAR         | VERBO | VERB   |                                                           |
+| DESABROCHAR        | VERBO | VERB   |                                                           |
+| DESAFIAR           | VERBO | VERB   |                                                           |
+| DESAFIO            | VERBO | VERB   |                                                           |
+| DESAPARECER        | VERBO | VERB   |                                                           |
+| DESCAMAR           | VERBO | VERB   |                                                           |
+| DESCANSAR          | VERBO | VERB   |                                                           |
+| DESCASCAR          | VERBO | VERB   |                                                           |
+| DESCER             | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| DESCOBRIR          | VERBO | VERB   |                                                           |
+| DESCONFIAR         | VERBO | VERB   |                                                           |
+| DESCONGELAR        | VERBO | VERB   |                                                           |
+| DESCONTAR          | VERBO | VERB   |                                                           |
+| DESCULPAR          | VERBO | VERB   |                                                           |
+| DESDENHAR          | VERBO | VERB   |                                                           |
+| DESEJAR            | VERBO | VERB   |                                                           |
+| DESEJAR            | VERBO | VERB   |                                                           |
+| DESENCAMINHAR      | VERBO | VERB   |                                                           |
+| DESENCONTRAR       | VERBO | VERB   |                                                           |
+| DESENHAR           | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| DESENTUPIR         | VERBO | VERB   |                                                           |
+| DESENVOLVER        | VERBO | VERB   |                                                           |
+| DESESPERAR         | VERBO | VERB   |                                                           |
+| DESFALECER         | VERBO | VERB   |                                                           |
+| DESFIAR            | VERBO | VERB   |                                                           |
+| DESFILAR           | VERBO | VERB   |                                                           |
+| DESGASTAR          | VERBO | VERB   |                                                           |
+| DESIGNAR           | VERBO | VERB   |                                                           |
+| DESISTIR           | VERBO | VERB   |                                                           |
+| DESLIGAR           | VERBO | VERB   |                                                           |
+| DESLIZAR           | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| DESMAIAR           | VERBO | VERB   |                                                           |
+| DESMONTAR          | VERBO | VERB   |                                                           |
+| DESOBEDECER        | VERBO | VERB   |                                                           |
+| DESPEDIR           | VERBO | VERB   |                                                           |
+| DESPEDIR           | VERBO | VERB   |                                                           |
+| DESPERTAR          | VERBO | VERB   |                                                           |
+| DESPREZAR          | VERBO | VERB   |                                                           |
+| DESQUITAR          | VERBO | VERB   |                                                           |
+| DESTRUIR           | VERBO | VERB   |                                                           |
+| DESTRUIR           | VERBO | VERB   |                                                           |
+| DESVALORIZAR       | VERBO | VERB   |                                                           |
+| DESVIAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| DETER              | VERBO | VERB   |                                                           |
+| DETESTAR           | VERBO | VERB   |                                                           |
+| DETESTAR           | VERBO | VERB   |                                                           |
+| DETONAR            | VERBO | VERB   |                                                           |
+| DEVER              | VERBO | VERB   |                                                           |
+| DEVER              | VERBO | VERB   |                                                           |
+| DEVER              | VERBO | VERB   |                                                           |
+| DEVOLVER           | VERBO | VERB   |                                                           |
+| DEVOLVER           | VERBO | VERB   |                                                           |
+| DEVORAR            | VERBO | VERB   |                                                           |
+| DIAGNOSTICAR       | VERBO | VERB   |                                                           |
+| DIALOGAR           | VERBO | VERB   |                                                           |
+| DIFAMAR            | VERBO | VERB   |                                                           |
+| DIGITAR            | VERBO | VERB   |                                                           |
+| DIMINUIR           | VERBO | VERB   |                                                           |
+| DIMINUIR           | VERBO | VERB   |                                                           |
+| DIMINUIR           | VERBO | VERB   |                                                           |
+| DIRIGIR            | VERBO | VERB   |                                                           |
+| DISCORDAR          | VERBO | VERB   |                                                           |
+| DISCUTIR           | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| DISFARÇAR          | VERBO | VERB   |                                                           |
+| DISPARAR           | VERBO | VERB   |                                                           |
+| DISPENSAR          | VERBO | VERB   |                                                           |
+| DISPERSAR          | VERBO | VERB   |                                                           |
+| DISPUTAR           | VERBO | VERB   |                                                           |
+| DISSOLVER          | VERBO | VERB   |                                                           |
+| DISTENDER          | VERBO | VERB   |                                                           |
+| DISTRAIR           | VERBO | VERB   |                                                           |
+| DISTRIBUIR         | VERBO | VERB   |                                                           |
+| DIVIDIR            | VERBO | VERB   |                                                           |
+| DIVIDIR            | VERBO | VERB   |                                                           |
+| DIVIDIR            | VERBO | VERB   |                                                           |
+| DIVISÃO            | VERBO | VERB   |                                                           |
+| DIVULGAR           | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| DIZER              | VERBO | VERB   |                                                           |
+| DIZER              | VERBO | VERB   |                                                           |
+| DOAR               | VERBO | VERB   |                                                           |
+| DOAR               | VERBO | VERB   |                                                           |
+| DOBRAR             | VERBO | VERB   |                                                           |
+| DOER               | VERBO | VERB   |                                                           |
+| DOMINAR            | VERBO | VERB   |                                                           |
+| DORMIR             | VERBO | VERB   |                                                           |
+| DRIBLAR            | VERBO | VERB   |                                                           |
+| DURAR              | VERBO | VERB   |                                                           |
+| DUVIDAR            | VERBO | VERB   |                                                           |
+| ECONOMIZAR         | VERBO | VERB   |                                                           |
+| EDIFICAR           | VERBO | VERB   |                                                           |
+| EDITAR             | VERBO | VERB   |                                                           |
+| EDUCAR             | VERBO | VERB   |                                                           |
+| EJACULAR           | VERBO | VERB   |                                                           |
+| ELEGER             | VERBO | VERB   |                                                           |
+| ELIMINAR           | VERBO | VERB   |                                                           |
+| EMAGRECER          | VERBO | VERB   |                                                           |
+| EMBAÇAR            | VERBO | VERB   |                                                           |
+| EMBALAR            | VERBO | VERB   |                                                           |
+| EMBRIAGAR          | VERBO | VERB   |                                                           |
+| EMBRULHAR          | VERBO | VERB   |                                                           |
+| EMERGIR            | VERBO | VERB   |                                                           |
+| EMOCIONAR          | VERBO | VERB   |                                                           |
+| EMOLDURAR          | VERBO | VERB   |                                                           |
+| EMPATAR            | VERBO | VERB   |                                                           |
+| EMPENHAR           | VERBO | VERB   |                                                           |
+| EMPREGAR           | VERBO | VERB   |                                                           |
+| EMPRESTAR          | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| EMPURRAR           | VERBO | VERB   |                                                           |
+| ENCABULAR          | VERBO | VERB   |                                                           |
+| ENCADERNAR         | VERBO | VERB   |                                                           |
+| ENCARAR            | VERBO | VERB   |                                                           |
+| ENCARCERAR         | VERBO | VERB   |                                                           |
+| ENCERRAR           | VERBO | VERB   |                                                           |
+| ENCERRAR           | VERBO | VERB   |                                                           |
+| ENCHER             | VERBO | VERB   |                                                           |
+| ENCHER             | VERBO | VERB   |                                                           |
+| ENCHER             | VERBO | VERB   |                                                           |
+| ENCHER             | VERBO | VERB   |                                                           |
+| ENCOBRIR           | VERBO | VERB   |                                                           |
+| ENCOLHER           | VERBO | VERB   |                                                           |
+| ENCONTRAR          | VERBO | VERB   |                                                           |
+| ENCORAJAR          | VERBO | VERB   |                                                           |
+| ENCRESPAR          | VERBO | VERB   |                                                           |
+| ENFEITAR           | VERBO | VERB   |                                                           |
+| ENFERRUJAR         | VERBO | VERB   |                                                           |
+| ENFORCAR           | VERBO | VERB   |                                                           |
+| ENFRAQUECER        | VERBO | VERB   |                                                           |
+| ENFRENTAR          | VERBO | VERB   |                                                           |
+| ENGANAR            | VERBO | VERB   |                                                           |
+| ENGANAR            | VERBO | VERB   |                                                           |
+| ENGARRAFAR         | VERBO | VERB   |                                                           |
+| ENGASGAR           | VERBO | VERB   |                                                           |
+| ENGATINHAR         | VERBO | VERB   |                                                           |
+| ENGOLIR            | VERBO | VERB   |                                                           |
+| ENGORDAR           | VERBO | VERB   |                                                           |
+| ENGRAVATAR-SE      | VERBO | VERB   |                                                           |
+| ENGRAXAR           | VERBO | VERB   |                                                           |
+| ENLOUQUECER        | VERBO | VERB   |                                                           |
+| ENROLAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ENROLAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ENROSCAR           | VERBO | VERB   |                                                           |
+| ENSAIAR            | VERBO | VERB   |                                                           |
+| ENSINAR            | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| ENSURDECER         | VERBO | VERB   |                                                           |
+| ENTENDER           | VERBO | VERB   |                                                           |
+| ENTERRAR           | VERBO | VERB   |                                                           |
+| ENTORNAR           | VERBO | VERB   |                                                           |
+| ENTRAR             | VERBO | VERB   |                                                           |
+| ENTRAR             | VERBO | VERB   |                                                           |
+| ENTREGAR           | VERBO | VERB   |                                                           |
+| ENTREVISTAR        | VERBO | VERB   |                                                           |
+| ENTRISTECER        | VERBO | VERB   |                                                           |
+| ENVELHECER         | VERBO | VERB   |                                                           |
+| ENVENENAR          | VERBO | VERB   |                                                           |
+| ENVERGONHAR        | VERBO | VERB   |                                                           |
+| ENVIAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| ENVIAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| ENVIAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| ENVIUVAR           | VERBO | VERB   |                                                           |
+| ENVOLVER           | VERBO | VERB   |                                                           |
+| ENXERGAR           | VERBO | VERB   |                                                           |
+| ENXUGAR LÁGRIMA    | VERBO | VERB   |                                                           |
+| ENXUGAR LOUÇA      | VERBO | VERB   |                                                           |
+| EQUILIBRAR         | VERBO | VERB   |                                                           |
+| ERGUER             | VERBO | VERB   |                                                           |
+| ERGUER             | VERBO | VERB   |                                                           |
+| ERGUER             | VERBO | VERB   |                                                           |
+| ERRAR              | VERBO | VERB   |                                                           |
+| ESBARRAR           | VERBO | VERB   |                                                           |
+| ESBOFETEAR         | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| ESCALAR            | VERBO | VERB   |                                                           |
+| ESCALAR            | VERBO | VERB   |                                                           |
+| ESCAPAR            | VERBO | VERB   |                                                           |
+| ESCAPAR            | VERBO | VERB   |                                                           |
+| ESCLARECER         | VERBO | VERB   |                                                           |
+| ESCOLHER           | VERBO | VERB   |                                                           |
+| ESCONDER           | VERBO | VERB   |                                                           |
+| ESCORREGAR         | VERBO | VERB   |                                                           |
+| ESCORRER           | VERBO | VERB   |                                                           |
+| ESCORRER           | VERBO | VERB   |                                                           |
+| ESCOVAR            | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| ESCOVAR            | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| ESCRAVIZAR         | VERBO | VERB   |                                                           |
+| ESCRAVIZAR         | VERBO | VERB   |                                                           |
+| ESCREVER NO QUADRO | VERBO | VERB   |                                                           |
+| ESCREVER           | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| ESCREVER           | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| ESCULPIR           | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| ESCULPIR           | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| ESCURECER          | VERBO | VERB   |                                                           |
+| ESCUTAR            | VERBO | VERB   |                                                           |
+| ESFAQUEAR          | VERBO | VERB   |                                                           |
+| ESFOLAR            | VERBO | VERB   |                                                           |
+| ESFORÇAR           | VERBO | VERB   |                                                           |
+| ESFREGAR           | VERBO | VERB   |                                                           |
+| ESFRIAR            | VERBO | VERB   |                                                           |
+| ESMAGAR            | VERBO | VERB   |                                                           |
+| ESMURRAR           | VERBO | VERB   |                                                           |
+| ESPALHAR           | VERBO | VERB   |                                                           |
+| ESPANCAR           | VERBO | VERB   |                                                           |
+| ESPARRAMAR         | VERBO | VERB   |                                                           |
+| ESPERAR            | VERBO | VERB   |                                                           |
+| ESPERAR            | VERBO | VERB   |                                                           |
+| ESPIAR             | VERBO | VERB   |                                                           |
+| ESPIAR             | VERBO | VERB   |                                                           |
+| ESPIONAR           | VERBO | VERB   |                                                           |
+| ESPIRRAR           | VERBO | VERB   |                                                           |
+| ESPREMER           | VERBO | VERB   |                                                           |
+| ESPUMAR            | VERBO | VERB   |                                                           |
+| ESQUECER           | VERBO | VERB   |                                                           |
+| ESQUENTAR          | VERBO | VERB   |                                                           |
+| ESQUIAR            | VERBO | VERB   |                                                           |
+| ESTAMPAR           | VERBO | VERB   |                                                           |
+| ESTAR              | VERBO | VERB   |                                                           |
+| ESTENDER           | VERBO | VERB   |                                                           |
+| ESTENDER           | VERBO | VERB   |                                                           |
+| ESTENDER           | VERBO | VERB   |                                                           |
+| ESTENDER           | VERBO | VERB   |                                                           |
+| ESTICAR            | VERBO | VERB   |                                                           |
+| ESTICAR            | VERBO | VERB   |                                                           |
+| ESTILHAÇAR         | VERBO | VERB   |                                                           |
+| ESTOURAR           | VERBO | VERB   |                                                           |
+| ESTRAGAR           | VERBO | VERB   |                                                           |
+| ESTRAGAR           | VERBO | VERB   |                                                           |
+| ESTRANGULAR        | VERBO | VERB   |                                                           |
+| ESTRANHAR          | VERBO | VERB   |                                                           |
+| ESTRANHO           | VERBO | VERB   |                                                           |
+| ESTREMECER         | VERBO | VERB   |                                                           |
+| ESTREMECER         | VERBO | VERB   |                                                           |
+| ESTUDAR            | VERBO | VERB   |                                                           |
+| ESTUPRAR           | VERBO | VERB   |                                                           |
+| ESVAZIAR           | VERBO | VERB   |                                                           |
+| ESVAZIAR           | VERBO | VERB   |                                                           |
+| ETIQUETAR          | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| EVACUAR            | VERBO | VERB   |                                                           |
+| EVANGELIZAR        | VERBO | VERB   |                                                           |
+| EVAPORAR           | VERBO | VERB   |                                                           |
+| EVITAR             | VERBO | VERB   |                                                           |
+| EXALTAR            | VERBO | VERB   |                                                           |
+| EXAMINAR           | VERBO | VERB   |                                                           |
+| EXCITAR            | VERBO | VERB   |                                                           |
+| EXCITAR            | VERBO | VERB   |                                                           |
+| EXCLUIR            | VERBO | VERB   |                                                           |
+| EXCLUIR            | VERBO | VERB   |                                                           |
+| EXECUTAR           | VERBO | VERB   |                                                           |
+| EXIBIR             | VERBO | VERB   |                                                           |
+| EXIGIR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| EXISTIR            | VERBO | VERB   |                                                           |
+| EXORTAR            | VERBO | VERB   |                                                           |
+| EXPANDIR           | VERBO | VERB   |                                                           |
+| EXPERIMENTAR       | VERBO | VERB   |                                                           |
+| EXPLANAR           | VERBO | VERB   |                                                           |
+| EXPLICAR           | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| EXPLODIR           | VERBO | VERB   |                                                           |
+| EXPLORAR           | VERBO | VERB   |                                                           |
+| EXPOR              | VERBO | VERB   |                                                           |
+| EXPOR              | VERBO | VERB   |                                                           |
+| EXPORTAR           | VERBO | VERB   |                                                           |
+| EXPULSAR           | VERBO | VERB   |                                                           |
+| EXTERMINAR         | VERBO | VERB   |                                                           |
+| EXTORQUIR          | VERBO | VERB   |                                                           |
+| EXTRAIR            | VERBO | VERB   |                                                           |
+| EXTRAIR            | VERBO | VERB   |                                                           |
+| EXTRAVIAR          | VERBO | VERB   |                                                           |
+| FACILITAR          | VERBO | VERB   |                                                           |
+| FALAR              | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| FALAR              | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| FALAR              | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| FALHAR             | VERBO | VERB   |                                                           |
+| FALIR              | VERBO | VERB   |                                                           |
+| FALIR              | VERBO | VERB   |                                                           |
+| FALTAR             | VERBO | VERB   |                                                           |
+| FALTAR             | VERBO | VERB   |                                                           |
+| FALTAR             | VERBO | VERB   |                                                           |
+| FANTASIAR          | VERBO | VERB   |                                                           |
+| FANTASIAR          | VERBO | VERB   |                                                           |
+| FAREJAR            | VERBO | VERB   |                                                           |
+| FATIAR             | VERBO | VERB   |                                                           |
+| FATURAR            | VERBO | VERB   |                                                           |
+| FAZER              | VERBO | VERB   |                                                           |
+| FECHAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| FECHAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| FERIR              | VERBO | VERB   |                                                           |
+| FERVER             | VERBO | VERB   |                                                           |
+| FERVILHAR          | VERBO | VERB   |                                                           |
+| FESTEJAR           | VERBO | VERB   |                                                           |
+| FICAR              | VERBO | VERB   |                                                           |
+| FICAR              | VERBO | VERB   |                                                           |
+| FICAR              | VERBO | VERB   |                                                           |
+| FILIAR             | VERBO | VERB   |                                                           |
+| FILMAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| FINCAR             | VERBO | VERB   |                                                           |
+| FINDAR             | VERBO | VERB   |                                                           |
+| FINGIR             | VERBO | VERB   |                                                           |
+| FISCALIZAR         | VERBO | VERB   |                                                           |
+| FLAGRAR            | VERBO | VERB   |                                                           |
+| FLAGRAR            | VERBO | VERB   |                                                           |
+| FLERTAR            | VERBO | VERB   |                                                           |
+| FLORESCER          | VERBO | VERB   |                                                           |
+| FLUTUAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| FOFOCAR            | VERBO | VERB   |                                                           |
+| FOFOCAR            | VERBO | VERB   |                                                           |
+| FORÇAR             | VERBO | VERB   |                                                           |
+| FORMAR             | VERBO | VERB   |                                                           |
+| FORMIGAR           | VERBO | VERB   |                                                           |
+| FORTALECER         | VERBO | VERB   |                                                           |
+| FOTOGRAFAR         | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| FOTOGRAFAR         | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| FRATURAR           | VERBO | VERB   |                                                           |
+| FRAUDAR            | VERBO | VERB   |                                                           |
+| FREAR              | VERBO | VERB   |                                                           |
+| FREQÜENTAR         | VERBO | VERB   |                                                           |
+| FRETAR             | VERBO | VERB   |                                                           |
+| FRITAR             | VERBO | VERB   |                                                           |
+| FRITAR             | VERBO | VERB   |                                                           |
+| FRUSTRAR           | VERBO | VERB   |                                                           |
+| FUGIR              | VERBO | VERB   |                                                           |
+| FUMAR              | VERBO | VERB   |                                                           |
+| FUNDAR             | VERBO | VERB   |                                                           |
+| FUNGAR             | VERBO | VERB   |                                                           |
+| FURAR              | VERBO | VERB   |                                                           |
+| FURAR              | VERBO | VERB   |                                                           |
+| FURIOSO            | VERBO | VERB   |                                                           |
+| FURTAR             | VERBO | VERB   |                                                           |
+| FUZILAR            | VERBO | VERB   |                                                           |
+| GABAR              | VERBO | VERB   |                                                           |
+| GALOPAR            | VERBO | VERB   |                                                           |
+| GANHAR             | VERBO | VERB   |                                                           |
+| GARGALHAR          | VERBO | VERB   |                                                           |
+| GARGALHAR          | VERBO | VERB   |                                                           |
+| GASTAR             | VERBO | VERB   |                                                           |
+| GASTAR             | VERBO | VERB   |                                                           |
+| GASTAR             | VERBO | VERB   |                                                           |
+| GEMER              | VERBO | VERB   |                                                           |
+| GERMINAR           | VERBO | VERB   |                                                           |
+| GINGAR             | VERBO | VERB   |                                                           |
+| GIRAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| GOLPEAR            | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| GOSTAR             | VERBO | VERB   |                                                           |
+| GOTEJAR            | VERBO | VERB   |                                                           |
+| GOZAR              | VERBO | VERB   |                                                           |
+| GOZAR              | VERBO | VERB   |                                                           |
+| GOZAR              | VERBO | VERB   |                                                           |
+| GRADEAR            | VERBO | VERB   |                                                           |
+| GRAFITE            | VERBO | VERB   |                                                           |
+| GRAMPEAR           | VERBO | VERB   |                                                           |
+| GRAVAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| GRIFAR             | VERBO | VERB   |                                                           |
+| GRITAR             | VERBO | VERB   |                                                           |
+| GUARDAR            | VERBO | VERB   |                                                           |
+| GUIAR              | VERBO | VERB   |                                                           |
+| GUINCHAR           | VERBO | VERB   |                                                           |
+| HABITAR            | VERBO | VERB   |                                                           |
+| HARMONIZAR         | VERBO | VERB   |                                                           |
+| HAVER              | VERBO | VERB   |                                                           |
+| HESITAR            | VERBO | VERB   |                                                           |
+| HIPNOTIZAR         | VERBO | VERB   |                                                           |
+| HONRAR             | VERBO | VERB   |                                                           |
+| HOSPEDAR           | VERBO | VERB   |                                                           |
+| HUMILHAR           | VERBO | VERB   |                                                           |
+| IGNORAR            | VERBO | VERB   |                                                           |
+| ILUMINAR           | VERBO | VERB   |                                                           |
+| ILUSTRAR           | VERBO | VERB   |                                                           |
+| IMAGINAR           | VERBO | VERB   |                                                           |
+| IMERGIR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| IMITAR             | VERBO | VERB   |                                                           |
+| IMPEDIR            | VERBO | VERB   |                                                           |
+| IMPLORAR           | VERBO | VERB   |                                                           |
+| IMPOR              | VERBO | VERB   |                                                           |
+| IMPORTAR           | VERBO | VERB   |                                                           |
+| IMPORTUNAR         | VERBO | VERB   |                                                           |
+| IMPRENSAR          | VERBO | VERB   |                                                           |
+| IMPRESSIONAR       | VERBO | VERB   |                                                           |
+| IMPRIMIR           | VERBO | VERB   |                                                           |
+| IMPRIMIR           | VERBO | VERB   |                                                           |
+| INALAR             | VERBO | VERB   |                                                           |
+| INAUGURAR          | VERBO | VERB   |                                                           |
+| INCENDIAR          | VERBO | VERB   |                                                           |
+| INCENTIVAR         | VERBO | VERB   |                                                           |
+| INCHAR             | VERBO | VERB   |                                                           |
+| INCINERAR          | VERBO | VERB   |                                                           |
+| INCLINAR           | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| INCLUIR            | VERBO | VERB   |                                                           |
+| INCOMODAR          | VERBO | VERB   |                                                           |
+| INDICAR            | VERBO | VERB   |                                                           |
+| INFLAMAR           | VERBO | VERB   |                                                           |
+| INFLUENCIAR        | VERBO | VERB   |                                                           |
+| INFORMAR           | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| INGERIR            | VERBO | VERB   |                                                           |
+| INGRESSAR          | VERBO | VERB   |                                                           |
+| INJETAR            | VERBO | VERB   |                                                           |
+| INSCREVER          | VERBO | VERB   |                                                           |
+| INSERIR            | VERBO | VERB   |                                                           |
+| INSISTIR           | VERBO | VERB   |                                                           |
+| INSTALAR           | VERBO | VERB   |                                                           |
+| INSTRUIR           | VERBO | VERB   |                                                           |
+| INTEGRAR           | VERBO | VERB   |                                                           |
+| INTERESSAR         | VERBO | VERB   |                                                           |
+| INTERFERIR         | VERBO | VERB   |                                                           |
+| INTERNAR           | VERBO | VERB   |                                                           |
+| INTERPRETAR        | VERBO | VERB   |                                                           |
+| INTERROMPER        | VERBO | VERB   |                                                           |
+| INTERVIR           | VERBO | VERB   |                                                           |
+| INTIMAR            | VERBO | VERB   |                                                           |
+| INTROMETER         | VERBO | VERB   |                                                           |
+| INVADIR            | VERBO | VERB   |                                                           |
+| INVEJAR            | VERBO | VERB   |                                                           |
+| INVENTAR           | VERBO | VERB   |                                                           |
+| INVERTER           | VERBO | VERB   |                                                           |
+| INVESTIGAR         | VERBO | VERB   |                                                           |
+| IR                 | VERBO | VERB   |                                                           |
+| IR                 | VERBO | VERB   |                                                           |
+| IR                 | VERBO | VERB   |                                                           |
+| IR                 | VERBO | VERB   |                                                           |
+| IR                 | VERBO | VERB   |                                                           |
+| IR                 | VERBO | VERB   |                                                           |
+| ISENTAR            | VERBO | VERB   |                                                           |
+| JEJUAR             | VERBO | VERB   |                                                           |
+| JOGAR CARTA        | VERBO | VERB   |                                                           |
+| JOGAR FORA         | VERBO | VERB   |                                                           |
+| JOGAR FUTEBOL      | VERBO | VERB   |                                                           |
+| JORRAR             | VERBO | VERB   |                                                           |
+| JULGAR             | VERBO | VERB   |                                                           |
+| JUNTAR             | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| JUNTAR             | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| JUNTAR             | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| JUNTAR             | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| JURAR              | VERBO | VERB   |                                                           |
+| LAÇAR              | VERBO | VERB   |                                                           |
+| LACRIMEJAR         | VERBO | VERB   |                                                           |
+| LAMBER             | VERBO | VERB   |                                                           |
+| LAMBUZAR           | VERBO | VERB   |                                                           |
+| LAMENTAR           | VERBO | VERB   |                                                           |
+| LANÇAR             | VERBO | VERB   |                                                           |
+| LANCHAR            | VERBO | VERB   |                                                           |
+| LAPIDAR            | VERBO | VERB   |                                                           |
+| LARGAR             | VERBO | VERB   |                                                           |
+| LARGAR             | VERBO | VERB   |                                                           |
+| LATIR              | VERBO | VERB   |                                                           |
+| LAVAR              | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| LAVAR ROSTO        | VERBO | VERB   |                                                           |
+| LAVAR AS MÃOS1     | VERBO | VERB   |                                                           |
+| LAVAR AS MÃOS2     | VERBO | VERB   |                                                           |
+| LAVAR CABELO       | VERBO | VERB   |                                                           |
+| LAVAR LOUÇA        | VERBO | VERB   |                                                           |
+| LAVAR ROUPA        | VERBO | VERB   |                                                           |
+| LAVRAR             | VERBO | VERB   |                                                           |
+| LECIONAR           | VERBO | VERB   |                                                           |
+| LEGALIZAR          | VERBO | VERB   |                                                           |
+| LEGITIMAR          | VERBO | VERB   |                                                           |
+| LEMBRAR            | VERBO | VERB   |                                                           |
+| LEMBRAR            | VERBO | VERB   |                                                           |
+| LER                | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| LER                | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| LEVANTAR           | VERBO | VERB   |                                                           |
+| LEVANTAR           | VERBO | VERB   |                                                           |
+| LEVAR BRONCA       | VERBO | VERB   |                                                           |
+| LEVAR              | VERBO | VERB   |                                                           |
+| LEVAR              | VERBO | VERB   |                                                           |
+| LEVITAR            | VERBO | VERB   |                                                           |
+| LIBERAR            | VERBO | VERB   |                                                           |
+| LIBERTAR           | VERBO | VERB   |                                                           |
+| LIGAR              | VERBO | VERB   |                                                           |
+| LIGAR APARELHO     | VERBO | VERB   |                                                           |
+| LIGAR LUZ          | VERBO | VERB   |                                                           |
+| LIGAR IGNIÇÃO      | VERBO | VERB   |                                                           |
+| LIGAR TECLA        | VERBO | VERB   |                                                           |
+| LIMAR              | VERBO | VERB   |                                                           |
+| LIMITAR            | VERBO | VERB   |                                                           |
+| LIMPEZA            | VERBO | VERB   |                                                           |
+| LIVRAR             | VERBO | VERB   |                                                           |
+| LIXAR              | VERBO | VERB   |                                                           |
+| LOCALIZAR          | VERBO | VERB   |                                                           |
+| LOCOMOVER          | VERBO | VERB   |                                                           |
+| LOTAR              | VERBO | VERB   |                                                           |
+| LUBRIFICAR         | VERBO | VERB   |                                                           |
+| LUCRAR             | VERBO | VERB   |                                                           |
+| LUSTRAR            | VERBO | VERB   |                                                           |
+| LUTAR              | VERBO | VERB   |                                                           |
+| LUTAR              | VERBO | VERB   |                                                           |
+| LUXAR              | VERBO | VERB   |                                                           |
+| MACHUCAR           | VERBO | VERB   |                                                           |
+| MACHUCAR           | VERBO | VERB   |                                                           |
+| MAGOAR             | VERBO | VERB   |                                                           |
+| MALTRATAR          | VERBO | VERB   |                                                           |
+| MAMAR              | VERBO | VERB   |                                                           |
+| MANCAR             | VERBO | VERB   |                                                           |
+| MANDAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| MANIFESTAR         | VERBO | VERB   |                                                           |
+| MANIFESTAR         | VERBO | VERB   |                                                           |
+| MANOBRAR           | VERBO | VERB   |                                                           |
+| MANTER             | VERBO | VERB   |                                                           |
+| MARCAR             | VERBO | VERB   |                                                           |
+| MARCAR             | VERBO | VERB   |                                                           |
+| MARCHAR            | VERBO | VERB   |                                                           |
+| MARTELAR           | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| MASSAGEAR          | VERBO | VERB   |                                                           |
+| MASTIGAR           | VERBO | VERB   |                                                           |
+| MASTURBAR          | VERBO | VERB   |                                                           |
+| MASTURBAR          | VERBO | VERB   |                                                           |
+| MATAR              | VERBO | VERB   |                                                           |
+| MATAR              | VERBO | VERB   |                                                           |
+| MATRICULAR         | VERBO | VERB   |                                                           |
+| MEDIR              | VERBO | VERB   |                                                           |
+| MEDITAR            | VERBO | VERB   |                                                           |
+| MEMORIZAR          | VERBO | VERB   |                                                           |
+| MENDIGAR           | VERBO | VERB   |                                                           |
+| MENOSPREZAR        | VERBO | VERB   |                                                           |
+| MENSTRUAR          | VERBO | VERB   |                                                           |
+| MENTIR             | VERBO | VERB   |                                                           |
+| MERGULHAR          | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| METER              | VERBO | VERB   |                                                           |
+| MEXER              | VERBO | VERB   |                                                           |
+| MIJAR              | VERBO | VERB   |                                                           |
+| MISTURAR           | VERBO | VERB   |                                                           |
+| MISTURAR           | VERBO | VERB   |                                                           |
+| MODELAR            | VERBO | VERB   |                                                           |
+| MODIFICAR          | VERBO | VERB   |                                                           |
+| MOER               | VERBO | VERB   |                                                           |
+| MOLHAR             | VERBO | VERB   |                                                           |
+| MONTAR             | VERBO | VERB   |                                                           |
+| MORAR              | VERBO | VERB   |                                                           |
+| MORDER             | VERBO | VERB   |                                                           |
+| MORRER             | VERBO | VERB   |                                                           |
+| MOSTRAR            | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| MOSTRAR            | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| MOVER              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| MUDAR              | VERBO | VERB   |                                                           |
+| MUDAR              | VERBO | VERB   |                                                           |
+| MULTAR             | VERBO | VERB   |                                                           |
+| MULTIPLICAR        | VERBO | VERB   |                                                           |
+| MURCHAR            | VERBO | VERB   |                                                           |
+| MUTILAR            | VERBO | VERB   |                                                           |
+| NADAR              | VERBO | VERB   |                                                           |
+| NAMORAR            | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| NARRAR             | VERBO | VERB   |                                                           |
+| NASCER             | VERBO | VERB   |                                                           |
+| NAUFRAGAR          | VERBO | VERB   |                                                           |
+| NECESSITAR         | VERBO | VERB   |                                                           |
+| NEGLICENCIAR       | VERBO | VERB   |                                                           |
+| NEGOCIAR           | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| NEVAR              | VERBO | VERB   |                                                           |
+| NINAR              | VERBO | VERB   |                                                           |
+| NÍVEL              | VERBO | VERB   |                                                           |
+| NOMEADO            | VERBO | VERB   |                                                           |
+| NOMEAR             | VERBO | VERB   |                                                           |
+| NOTAR              | VERBO | VERB   |                                                           |
+| OBEDECER           | VERBO | VERB   |                                                           |
+| OBRIGAR            | VERBO | VERB   |                                                           |
+| OBSERVAR           | VERBO | VERB   |                                                           |
+| OBSERVAR           | VERBO | VERB   |                                                           |
+| OBTER              | VERBO | VERB   |                                                           |
+| OBTURAR            | VERBO | VERB   |                                                           |
+| OCUPAR             | VERBO | VERB   |                                                           |
+| ODIAR              | VERBO | VERB   |                                                           |
+| OFEGAR             | VERBO | VERB   |                                                           |
+| OFENDER            | VERBO | VERB   |                                                           |
+| OFERECER           | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| OFICIALIZAR        | VERBO | VERB   |                                                           |
+| OFUSCAR            | VERBO | VERB   |                                                           |
+| OLHAR              | VERBO | VERB   |                                                           |
+| OLHAR              | VERBO | VERB   |                                                           |
+| OMITIR             | VERBO | VERB   |                                                           |
+| ONDULAR            | VERBO | VERB   |                                                           |
+| OPERAR             | VERBO | VERB   |                                                           |
+| OPERAR             | VERBO | VERB   |                                                           |
+| OPINAR             | VERBO | VERB   |                                                           |
+| OPOR               | VERBO | VERB   |                                                           |
+| OPRIMIR            | VERBO | VERB   |                                                           |
+| OPTAR              | VERBO | VERB   |                                                           |
+| ORAR               | VERBO | VERB   |                                                           |
+| ORDENAR            | VERBO | VERB   |                                                           |
+| ORDENAR            | VERBO | VERB   |                                                           |
+| ORGANIZAR          | VERBO | VERB   |                                                           |
+| ORGULHAR           | VERBO | VERB   |                                                           |
+| ORIENTAR           | VERBO | VERB   |                                                           |
+| OSCILAR            | VERBO | VERB   |                                                           |
+| OUTORGAR           | VERBO | VERB   |                                                           |
+| OUVIR              | VERBO | VERB   |                                                           |
+| PADRONIZAR         | VERBO | VERB   |                                                           |
+| PAGAR              | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| PAGAR              | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| PALESTRAR          | VERBO | VERB   |                                                           |
+| PALPITAR           | VERBO | VERB   |                                                           |
+| PALPITAR           | VERBO | VERB   |                                                           |
+| PAPAR              | VERBO | VERB   |                                                           |
+| PAQUERAR           | VERBO | VERB   |                                                           |
+| PAQUERAR           | VERBO | VERB   |                                                           |
+| PARABENIZAR        | VERBO | VERB   |                                                           |
+| PARABENIZAR        | VERBO | VERB   |                                                           |
+| PARAR              | VERBO | VERB   |                                                           |
+| PARAR              | VERBO | VERB   |                                                           |
+| PARAR              | VERBO | VERB   |                                                           |
+| PARAR              | VERBO | VERB   |                                                           |
+| PARAR              | VERBO | VERB   |                                                           |
+| PARCEIRO           | VERBO | VERB   |                                                           |
+| PARCELAR           | VERBO | VERB   |                                                           |
+| PARECER            | VERBO | VERB   |                                                           |
+| PARTICIPAR         | VERBO | VERB   |                                                           |
+| PARTIR             | VERBO | VERB   |                                                           |
+| PARTIR             | VERBO | VERB   |                                                           |
+| PARTIR             | VERBO | VERB   |                                                           |
+| PARTIR             | VERBO | VERB   |                                                           |
+| PASSA-TEMPO        | VERBO | VERB   |                                                           |
+| PASSAR             | VERBO | VERB   |                                                           |
+| PASSAR PESSOA      | VERBO | VERB   |                                                           |
+| PASSAR RODO        | VERBO | VERB   |                                                           |
+| PASSAR ROUPA       | VERBO | VERB   |                                                           |
+| PASSEAR            | VERBO | VERB   |                                                           |
+| PATINAR            | VERBO | VERB   |                                                           |
+| PATINAR            | VERBO | VERB   |                                                           |
+| PATINAR            | VERBO | VERB   |                                                           |
+| PECAR              | VERBO | VERB   |                                                           |
+| PEDIR              | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| PEDIR              | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| PEGAR              | VERBO | VERB   |                                                           |
+| PEGAR              | VERBO | VERB   |                                                           |
+| PEGAR              | VERBO | VERB   |                                                           |
+| PENDURAR           | VERBO | VERB   |                                                           |
+| PENDURAR           | VERBO | VERB   |                                                           |
+| PENEIRAR           | VERBO | VERB   |                                                           |
+| PENETRAR           | VERBO | VERB   |                                                           |
+| PENSAR             | VERBO | VERB   |                                                           |
+| PENSAR             | VERBO | VERB   |                                                           |
+| PENTEAR            | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| PERAMBULAR         | VERBO | VERB   |                                                           |
+| PERCEBER           | VERBO | VERB   |                                                           |
+| PERCEBER           | VERBO | VERB   |                                                           |
+| PERDER             | VERBO | VERB   |                                                           |
+| PERDOAR            | VERBO | VERB   |                                                           |
+| PERFURAR           | VERBO | VERB   |                                                           |
+| PERGUNTAR          | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| PERMANECER         | VERBO | VERB   |                                                           |
+| PERMITIR           | VERBO | VERB   |                                                           |
+| PERSEGUIR          | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| PERSISTIR          | VERBO | VERB   |                                                           |
+| PERTENCER          | VERBO | VERB   |                                                           |
+| PERTURBAR          | VERBO | VERB   |                                                           |
+| PESCAR             | VERBO | VERB   |                                                           |
+| PESTANEJAR         | VERBO | VERB   |                                                           |
+| PETISCAR           | VERBO | VERB   |                                                           |
+| PICAR              | VERBO | VERB   |                                                           |
+| PICAR              | VERBO | VERB   |                                                           |
+| PICAR              | VERBO | VERB   |                                                           |
+| PICHAR             | VERBO | VERB   |                                                           |
+| PINGAR             | VERBO | VERB   |                                                           |
+| PINTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| PINTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| PINTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| PINTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| PINTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| PINTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| PINTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| PINTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| PINTAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| PINTOR             | VERBO | VERB   |                                                           |
+| PIORAR             | VERBO | VERB   |                                                           |
+| PISAR              | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| PLANEJAR           | VERBO | VERB   |                                                           |
+| PLANTAR            | VERBO | VERB   |                                                           |
+| PLASTIFICAR        | VERBO | VERB   |                                                           |
+| PODAR              | VERBO | VERB   |                                                           |
+| PODER              | VERBO | VERB   |                                                           |
+| POLIR              | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| PÔR                | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| POUPAR             | VERBO | VERB   |                                                           |
+| POUPAR             | VERBO | VERB   |                                                           |
+| POUSAR             | VERBO | VERB   |                                                           |
+| PRATICAR           | VERBO | VERB   |                                                           |
+| PRECIPITAR         | VERBO | VERB   |                                                           |
+| PRECISAR           | VERBO | VERB   |                                                           |
+| PREENCHER          | VERBO | VERB   |                                                           |
+| PREFERIR           | VERBO | VERB   |                                                           |
+| PREJUDICAR         | VERBO | VERB   |                                                           |
+| PRENDER            | VERBO | VERB   |                                                           |
+| PRENDER            | VERBO | VERB   |                                                           |
+| PREOCUPAR          | VERBO | VERB   |                                                           |
+| PREPARAR           | VERBO | VERB   |                                                           |
+| PRESENTEAR         | VERBO | VERB   |                                                           |
+| PRESERVAR          | VERBO | VERB   |                                                           |
+| PRESSENTIR         | VERBO | VERB   |                                                           |
+| PRESTAR ATE NÇÃO   | VERBO | VERB   |                                                           |
+| PRESTAR CUNCURSO   | VERBO | VERB   |                                                           |
+| PRESTAR SERVIÇO    | VERBO | VERB   |                                                           |
+| PRETENDER          | VERBO | VERB   |                                                           |
+| PROCESSAR          | VERBO | VERB   |                                                           |
+| PROCURAR           | VERBO | VERB   |                                                           |
+| PRODUZIR           | VERBO | VERB   |                                                           |
+| PROGREDIR          | VERBO | VERB   |                                                           |
+| PROIBIR            | VERBO | VERB   |                                                           |
+| PROLONGAR          | VERBO | VERB   |                                                           |
+| PROMETER           | VERBO | VERB   |                                                           |
+| PROMOVER           | VERBO | VERB   |                                                           |
+| PRORROGAR          | VERBO | VERB   |                                                           |
+| PROSPERAR          | VERBO | VERB   |                                                           |
+| PROSSEGUIR         | VERBO | VERB   |                                                           |
+| PROTEGER           | VERBO | VERB   |                                                           |
+| PROTEGER           | VERBO | VERB   |                                                           |
+| PROTESTAR          | VERBO | VERB   |                                                           |
+| PROVAR             | VERBO | VERB   |                                                           |
+| PROVAR             | VERBO | VERB   |                                                           |
+| PROVAR             | VERBO | VERB   |                                                           |
+| PROVAR             | VERBO | VERB   |                                                           |
+| PROVIDENCIAR       | VERBO | VERB   |                                                           |
+| PROVOCAR           | VERBO | VERB   |                                                           |
+| PROVOCAR           | VERBO | VERB   |                                                           |
+| PUBLICAR           | VERBO | VERB   |                                                           |
+| PUBLICAR           | VERBO | VERB   |                                                           |
+| PUBLICIDADE        | VERBO | VERB   |                                                           |
+| PULAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| PULAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| PULAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| PULAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| PULAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| PULAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| PULAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| PULSAR             | VERBO | VERB   |                                                           |
+| PUXAR              | VERBO | VERB   |                                                           |
+| QUEBRAR            | VERBO | VERB   |                                                           |
+| QUEBRAR            | VERBO | VERB   |                                                           |
+| QUEBRAR            | VERBO | VERB   |                                                           |
+| QUEBRAR            | VERBO | VERB   |                                                           |
+| QUEIMAR            | VERBO | VERB   |                                                           |
+| QUERER             | VERBO | VERB   |                                                           |
+| QUITAR             | VERBO | VERB   |                                                           |
+| QUITAR             | VERBO | VERB   |                                                           |
+| QUITAR             | VERBO | VERB   |                                                           |
+| RABISCAR           | VERBO | VERB   |                                                           |
+| RACHAR             | VERBO | VERB   |                                                           |
+| RACIOCINAR         | VERBO | VERB   |                                                           |
+| RALAR              | VERBO | VERB   |                                                           |
+| RANGER             | VERBO | VERB   |                                                           |
+| RAPTAR             | VERBO | VERB   |                                                           |
+| RASGAR             | VERBO | VERB   |                                                           |
+| RASGAR             | VERBO | VERB   |                                                           |
+| RASPAR             | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| RASTEJAR           | VERBO | VERB   |                                                           |
+| RASTEJAR           | VERBO | VERB   |                                                           |
+| REAGIR             | VERBO | VERB   |                                                           |
+| REALIZAR           | VERBO | VERB   |                                                           |
+| REBOCAR            | VERBO | VERB   |                                                           |
+| REBOCAR            | VERBO | VERB   |                                                           |
+| REBOLAR            | VERBO | VERB   |                                                           |
+| RECEBER            | VERBO | VERB   |                                                           |
+| RECLAMAR           | VERBO | VERB   |                                                           |
+| RECLINAR           | VERBO | VERB   |                                                           |
+| RECOLHER           | VERBO | VERB   |                                                           |
+| RECONCILIAR        | VERBO | VERB   |                                                           |
+| RECONHECER         | VERBO | VERB   |                                                           |
+| RECORDAR           | VERBO | VERB   |                                                           |
+| RECORTAR           | VERBO | VERB   |                                                           |
+| RECUAR             | VERBO | VERB   |                                                           |
+| RECUPERAR          | VERBO | VERB   |                                                           |
+| RECUSAR            | VERBO | VERB   |                                                           |
+| REDUZIR            | VERBO | VERB   |                                                           |
+| REFLETIR           | VERBO | VERB   |                                                           |
+| REFLETIR           | VERBO | VERB   |                                                           |
+| REFORMAR           | VERBO | VERB   |                                                           |
+| REFRESCAR          | VERBO | VERB   |                                                           |
+| REGER              | VERBO | VERB   |                                                           |
+| REGRESSAR          | VERBO | VERB   |                                                           |
+| REGULAR            | VERBO | VERB   |                                                           |
+| REIVINDICAR        | VERBO | VERB   |                                                           |
+| REJEITAR           | VERBO | VERB   |                                                           |
+| RELACIONAR         | VERBO | VERB   |                                                           |
+| RELATAR            | VERBO | VERB   |                                                           |
+| RELAXAR            | VERBO | VERB   |                                                           |
+| REMAR              | VERBO | VERB   |                                                           |
+| REMETER            | VERBO | VERB   |                                                           |
+| RENOVAR            | VERBO | VERB   |                                                           |
+| RENUNCIAR          | VERBO | VERB   |                                                           |
+| REPARAR            | VERBO | VERB   |                                                           |
+| REPARTIR           | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| REPETIR            | VERBO | VERB   |                                                           |
+| REPOUSAR           | VERBO | VERB   |                                                           |
+| REPREENDER         | VERBO | VERB   |                                                           |
+| REPRESENTAR        | VERBO | VERB   |                                                           |
+| REPROVAR           | VERBO | VERB   |                                                           |
+| RESERVAR           | VERBO | VERB   |                                                           |
+| RESERVAR           | VERBO | VERB   |                                                           |
+| RESISTIR           | VERBO | VERB   |                                                           |
+| RESOLVER           | VERBO | VERB   |                                                           |
+| RESPEITAR          | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| RESPIRAR           | VERBO | VERB   |                                                           |
+| RESPONDER          | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| RESTAR             | VERBO | VERB   |                                                           |
+| RESTAURAR          | VERBO | VERB   |                                                           |
+| RESUMIR            | VERBO | VERB   |                                                           |
+| RETIRAR            | VERBO | VERB   |                                                           |
+| RETIRAR            | VERBO | VERB   |                                                           |
+| RETOCAR            | VERBO | VERB   |                                                           |
+| RETORNAR           | VERBO | VERB   |                                                           |
+| RETRATAR           | VERBO | VERB   |                                                           |
+| RETRIBUIR          | VERBO | VERB   |                                                           |
+| REUNIR             | VERBO | VERB   |                                                           |
+| REUNIR             | VERBO | VERB   |                                                           |
+| REVELAR            | VERBO | VERB   |                                                           |
+| REVELAR            | VERBO | VERB   |                                                           |
+| REVESTIR           | VERBO | VERB   |                                                           |
+| REVEZAR            | VERBO | VERB   |                                                           |
+| REVISTAR           | VERBO | VERB   |                                                           |
+| REZAR              | VERBO | VERB   |                                                           |
+| REZAR              | VERBO | VERB   |                                                           |
+| RIR                | VERBO | VERB   |                                                           |
+| RISCAR             | VERBO | VERB   |                                                           |
+| RODAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| RODEAR             | VERBO | VERB   |                                                           |
+| RODOPIAR           | VERBO | VERB   |                                                           |
+| ROER               | VERBO | VERB   |                                                           |
+| ROLAR              | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| ROMPER             | VERBO | VERB   |                                                           |
+| RONCAR             | VERBO | VERB   |                                                           |
+| RONDAR             | VERBO | VERB   |                                                           |
+| ROUBAR             | VERBO | VERB   |                                                           |
+| ROUBAR             | VERBO | VERB   |                                                           |
+| RUBORIZAR          | VERBO | VERB   |                                                           |
+| SABER              | VERBO | VERB   |                                                           |
+| SABOREAR           | VERBO | VERB   |                                                           |
+| SACANEAR           | VERBO | VERB   |                                                           |
+| SACIAR             | VERBO | VERB   |                                                           |
+| SACRIFICAR         | VERBO | VERB   |                                                           |
+| SACUDIR            | VERBO | VERB   |                                                           |
+| SAIR               | VERBO | VERB   |                                                           |
+| SAIR               | VERBO | VERB   |                                                           |
+| SALPICAR           | VERBO | VERB   |                                                           |
+| SALTAR             | VERBO | VERB   |                                                           |
+| SALTAR             | VERBO | VERB   |                                                           |
+| SALVAR             | VERBO | VERB   |                                                           |
+| SALVAR             | VERBO | VERB   |                                                           |
+| SARAR              | VERBO | VERB   |                                                           |
+| SATISFAZER         | VERBO | VERB   |                                                           |
+| SECAR              | VERBO | VERB   |                                                           |
+| SEDUZIR            | VERBO | VERB   |                                                           |
+| SEGUIR             | VERBO | VERB   |                                                           |
+| SEGURAR            | VERBO | VERB   |                                                           |
+| SELECIONAR         | VERBO | VERB   |                                                           |
+| SENTAR             | VERBO | VERB   |                                                           |
+| SENTIR             | VERBO | VERB   |                                                           |
+| SEPARAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| SEPARAR            | VERBO | VERB-G | Verbo conjugado por gênero                                |
+| SER                | VERBO | VERB   |                                                           |
+| SERRAR             | VERBO | VERB   |                                                           |
+| SERVIR             | VERBO | VERB   |                                                           |
+| SIGNIFICAR         | VERBO | VERB   |                                                           |
+| SINTETIZAR         | VERBO | VERB   |                                                           |
+| SOBRAR             | VERBO | VERB   |                                                           |
+| SOBRECARREGAR      | VERBO | VERB   |                                                           |
+| SOBRESSALTAR-SE    | VERBO | VERB   |                                                           |
+| SOCORRER           | VERBO | VERB   |                                                           |
+| SOFRER             | VERBO | VERB   |                                                           |
+| SOLETRAR           | VERBO | VERB   |                                                           |
+| SOLICITAR          | VERBO | VERB   |                                                           |
+| SOMAR              | VERBO | VERB   |                                                           |
+| SONHAR             | VERBO | VERB   |                                                           |
+| SOPRAR             | VERBO | VERB   |                                                           |
+| SOPRAR             | VERBO | VERB   |                                                           |
+| SORRIR             | VERBO | VERB   |                                                           |
+| SUAR               | VERBO | VERB   |                                                           |
+| SUBIR              | VERBO | VERB   |                                                           |
+| SUBIR              | VERBO | VERB   |                                                           |
+| SUBLINHAR          | VERBO | VERB   |                                                           |
+| SUBMERGIR          | VERBO | VERB   |                                                           |
+| SUBORNAR           | VERBO | VERB   |                                                           |
+| SUBSTITUIR         | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| SUBTRAIR           | VERBO | VERB   |                                                           |
+| SUFOCAR            | VERBO | VERB   |                                                           |
+| SUICIDAR           | VERBO | VERB   |                                                           |
+| SUJAR              | VERBO | VERB   |                                                           |
+| SUMARIAR           | VERBO | VERB   |                                                           |
+| SUMIR              | VERBO | VERB   |                                                           |
+| SURGIR             | VERBO | VERB   |                                                           |
+| SURPREENDER        | VERBO | VERB   |                                                           |
+| SURRAR             | VERBO | VERB   |                                                           |
+| SUSPEITAR          | VERBO | VERB   |                                                           |
+| SUSPENDER          | VERBO | VERB   |                                                           |
+| SUSPENDER          | VERBO | VERB   |                                                           |
+| SUSPENDER          | VERBO | VERB   |                                                           |
+| SUSSURRAR          | VERBO | VERB   |                                                           |
+| SUSTENTAR          | VERBO | VERB   |                                                           |
+| TAGARELAR          | VERBO | VERB   |                                                           |
+| TAMPAR             | VERBO | VERB   |                                                           |
+| TAPAR              | VERBO | VERB   |                                                           |
+| TECLAR             | VERBO | VERB   |                                                           |
+| TELEGRAFAR         | VERBO | VERB   |                                                           |
+| TENTAR             | VERBO | VERB   |                                                           |
+| TER                | VERBO | VERB   |                                                           |
+| TERMINAR           | VERBO | VERB   |                                                           |
+| TESTEMUNHAR        | VERBO | VERB   |                                                           |
+| TIRAR              | VERBO | VERB   |                                                           |
+| TOCAR              | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| TOLERAR            | VERBO | VERB   |                                                           |
+| TOMAR              | VERBO | VERB   |                                                           |
+| TOMAR              | VERBO | VERB   |                                                           |
+| TOMBAR             | VERBO | VERB   |                                                           |
+| TOPAR              | VERBO | VERB   |                                                           |
+| TOPAR              | VERBO | VERB   |                                                           |
+| TORCER             | VERBO | VERB   |                                                           |
+| TORCER             | VERBO | VERB   |                                                           |
+| TORCER             | VERBO | VERB   |                                                           |
+| TRABALHAR          | VERBO | VERB   |                                                           |
+| TRAGAR             | VERBO | VERB   |                                                           |
+| TRAGAR             | VERBO | VERB   |                                                           |
+| TRAIR              | VERBO | VERB   |                                                           |
+| TRANCAR            | VERBO | VERB   |                                                           |
+| TRANSAR            | VERBO | VERB   |                                                           |
+| TRANSBORDAR        | VERBO | VERB   |                                                           |
+| TRANSCREVER        | VERBO | VERB   |                                                           |
+| TRANSFERIR         | VERBO | VERB   |                                                           |
+| TRANSFORMAR        | VERBO | VERB   |                                                           |
+| TRANSPIRAR         | VERBO | VERB   |                                                           |
+| TRANSPORTAR        | VERBO | VERB   |                                                           |
+| TRATAR             | VERBO | VERB   |                                                           |
+| TRAUMATIZAR        | VERBO | VERB   |                                                           |
+| TRAZER             | VERBO | VERB   |                                                           |
+| TREINAR            | VERBO | VERB   |                                                           |
+| TREMER             | VERBO | VERB   |                                                           |
+| TREMER             | VERBO | VERB   |                                                           |
+| TREMULAR           | VERBO | VERB   |                                                           |
+| TREPAR             | VERBO | VERB   |                                                           |
+| TREPIDAR           | VERBO | VERB   |                                                           |
+| TRICOTAR           | VERBO | VERB-L | Verbo conjugado por locativo                              |
+| TROCAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| TROCAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| TROTAR             | VERBO | VERB   |                                                           |
+| ULTRAJAR           | VERBO | VERB   |                                                           |
+| ULTRAPASSAR        | VERBO | VERB   |                                                           |
+| UMEDECER           | VERBO | VERB   |                                                           |
+| UNIFICAR           | VERBO | VERB   |                                                           |
+| UNIR               | VERBO | VERB   |                                                           |
+| UNTAR              | VERBO | VERB   |                                                           |
+| VACILAR            | VERBO | VERB   |                                                           |
+| VACINAR            | VERBO | VERB   |                                                           |
+| VACINAR            | VERBO | VERB   |                                                           |
+| VADIAR             | VERBO | VERB   |                                                           |
+| VAIAR              | VERBO | VERB   |                                                           |
+| VALER              | VERBO | VERB   |                                                           |
+| VALORIZAR          | VERBO | VERB   |                                                           |
+| VAPORIZAR          | VERBO | VERB   |                                                           |
+| VAREJAR            | VERBO | VERB   |                                                           |
+| VÁRIOS1            | VERBO | VERB   |                                                           |
+| VARRER             | VERBO | VERB   |                                                           |
+| VASCOLEJAR         | VERBO | VERB   |                                                           |
+| VASCULHAR          | VERBO | VERB   |                                                           |
+| VAZAR              | VERBO | VERB   |                                                           |
+| VAZAR              | VERBO | VERB   |                                                           |
+| VAZAR              | VERBO | VERB   |                                                           |
+| VEDAR              | VERBO | VERB   |                                                           |
+| VEDAR              | VERBO | VERB   |                                                           |
+| VEDAR              | VERBO | VERB   |                                                           |
+| VENCER             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| VENCER             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| VENDER             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| VENERAR            | VERBO | VERB   |                                                           |
+| VENTAR             | VERBO | VERB   |                                                           |
+| VER                | VERBO | VERB   |                                                           |
+| VER                | VERBO | VERB   |                                                           |
+| VERIFICAR          | VERBO | VERB   |                                                           |
+| VERTER             | VERBO | VERB   |                                                           |
+| VESTIR             | VERBO | VERB   |                                                           |
+| VETAR              | VERBO | VERB   |                                                           |
+| VIAJAR             | VERBO | VERB   |                                                           |
+| VIAJAR             | VERBO | VERB   |                                                           |
+| VIBRAR             | VERBO | VERB   |                                                           |
+| VICIAR             | VERBO | VERB   |                                                           |
+| VIGIAR             | VERBO | VERB   |                                                           |
+| VINGAR             | VERBO | VERB   |                                                           |
+| VINGAR             | VERBO | VERB   |                                                           |
+| VIR                | VERBO | VERB   |                                                           |
+| VIRAR              | VERBO | VERB   |                                                           |
+| VISITAR            | VERBO | VERB   |                                                           |
+| VIVER              | VERBO | VERB   |                                                           |
+| VOAR               | VERBO | VERB   |                                                           |
+| VOLTAR             | VERBO | VERB   |                                                           |
+| VOMITAR            | VERBO | VERB   |                                                           |
+| VOTAR              | VERBO | VERB   |                                                           |
+| XERETAR            | VERBO | VERB   |                                                           |
+| XEROCAR            | VERBO | VERB   |                                                           |
+| XINGAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| ZANGAR             | VERBO | VERB   |                                                           |
+| ZARPAR             | VERBO | VERB   |                                                           |
+| ZERAR              | VERBO | VERB   |                                                           |
+| ZIGUEZAGUEAR       | VERBO | VERB   |                                                           |
+| ZOMBAR             | VERBO | VERB-P | Verbo conjugao pela pessoa do dicurso. Ex.: 1sPERGUNTAR3s |
+| CASCÃO             | VERBO | VERB   |                                                           |
++--------------------+-------+--------+-----------------------------------------------------------+
+1558 rows in set (0.008 sec)
