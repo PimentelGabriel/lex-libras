@@ -36,25 +36,36 @@ def analisarVerbo(token, Doc):
         if token.dep_ == "ROOT":
             # Obtem o numero (singular ou plural) e a pessoa (1º, 2º ou 3º) do sujeito da frase pra concatenar com o verbo principal
             if token.morph.get('Person'):
-                token._.metaDados["verboData"]["numero"] = 's' if token.morph.get('Number')[
-                    0] == "Sing" else 'p'
-                token._.metaDados["verboData"]["pessoa"] = token.morph.get('Person')[
-                    0]
+                if token.morph.get('Number')[0] == "Sing":
+                    token._.metaDados["verboData"]["numero"] = 's'    
+                else:
+                    token._.metaDados["verboData"]["numero"] = 'p'
+
+                token._.metaDados["verboData"]["pessoa"] = token.morph.get('Person')[0]
 
             else:
                 for c in token.children:
                     # Analisa o auxiliar para ver se é um verbo e se for deve
                     # conter informações sobre o tempó e a pessoa do discuro
                     if c.pos_ == "AUX" and c.morph.get('VerbForm'):
-                        token._.metaDados["verboData"]["numero"] = 's' if c.morph.get('Number')[
-                            0] == "Sing" else 'p'
-                        token._.metaDados["verboData"]["pessoa"] = c.morph.get('Person')[
-                            0]
+                        if c.morph.get('Number')[0] == "Sing":
+                            token._.metaDados["verboData"]["numero"] = 's'
+                        else:
+                            token._.metaDados["verboData"]["numero"] = 'p'
+
+                        token._.metaDados["verboData"]["pessoa"] = c.morph.get('Person')[0]
 
             # Analisa os outros auxilires do verbo principal
             for c in token.children:
-                # Caso seja o objeto
-                if c.dep_ == "obj":
+                # Caso o fihlo seja um sujeito
+                if c.dep_ == "nsubj":
+                    if c.pos_.startswith("PRON"):
+                        #Como um token sintaqticamente filho do verbo conjugado pela pessoa discurso (verbo-p) é um pronome
+                        # O algoritimo deve invalidar o PRON
+                        c._.eh_corresponde = False
+
+                # Caso o filho seja um objeto ou obliquo
+                if c.dep_ in ("obj", "obl"):
                     if os.environ['LEXLIBRAS_VERBOSE'] == "1":
                         print("\n\n\t\tVERBOSE!!!!!!!!\n\n")
                         print(f"{c.text} é {c.dep_} e o seu pos é {c.pos_}")
@@ -63,25 +74,35 @@ def analisarVerbo(token, Doc):
 
                     # Ver se é substantivo
                     if c.pos_.startswith("NOUN"):
+                        if c.morph.get('Number')[0] == "Sing":
+                            token._.metaDados["verboData"]["obj"]["numero"] = 's'
+                        elif c.morph.get('Number')[0] == 'p':
+                            token._.metaDados["verboData"]["obj"]["pessoa"] = '3'
 
-                        token._.metaDados["verboData"]["obj"]["numero"] = 's' if c.morph.get('Number')[
-                            0] == "Sing" else 'p'
-                        token._.metaDados["verboData"]["obj"]["pessoa"] = '3'
                         if c.morph.get('Number')[0] not in ("Sing", "Plur"):
                             raise Exception(
                                 f"Número da palavra {c.text} não encontrada.\n\tA palavra deve ser um objeto, porém não possui\nNumber")
                         break
+                    
                     # Ver se é pronome
                     # Verificar essa regras
                     if c.pos_.startswith("PRON"):
-                        token._.metaDados["verboData"]["obj"]["numero"] = 's' if c.morph.get('Number')[
-                            0] == "Sing" else 'p'
-                        token._.metaDados["verboData"]["obj"]["pessoa"] = c.morph.get('Person')[
-                            0]
+                        #Como um token sintaqticamente filho do verbo conjugado pela pessoa discurso (verbo-p) é um pronome
+                        # O algoritimo deve invalidar o PRON
+                        c._.eh_corresponde = False
+
+                        if c.morph.get('Number')[0] == "Sing":
+                            token._.metaDados["verboData"]["obj"]["numero"] = 's'
+                        else:
+                            token._.metaDados["verboData"]["obj"]["numero"] = 'p'
+                        
+                        token._.metaDados["verboData"]["obj"]["pessoa"] = c.morph.get('Person')[0]
+                        
                         if c.morph.get('Number')[0] not in ("Sing", "Plur"):
                             raise Exception(
                                 f"Número da palavra {c.text} não encontrada.\n\tA palavra deve ser um objeto, porém não possui\nNumber")
                         break
+                    
                     # Ver se é substantivo próprio
                     if c.pos_.startswith("PROPN"):
                         token._.metaDados["verboData"]["obj"]["numero"] = 's' if c.morph.get('Number')[
