@@ -1,0 +1,35 @@
+Verbo com flexão para a pesso a do discurso
+Eu pergunto a ele: 1SPERGUNTAR3S;
+Ela telefona para mim: 3STELEFONAR1S;
+Você mostra para ele: 2SMOSTRAR3S;
+
+========
+Verbos com flexão para gênero
+
+O Lápis cai: OBJETO_FINO_CAIR;
+O prato cai: OBJETO_CIRCULAR_ACHATADO-CAIR;
+
+Casos modais
+Eu trabalho muito: 1s TRABALHAR_MUITO;
+Eu ando muito: 1s ANDAR_MUITO;
+Ele anda rápido: 1s ANDAR_MUITO;
+
+Flexão para o locativo
+Ele atira na cabeça: 3S ATIRAR CABEÇA;
+
+Flexão para o locativo e gênero:
+Eu coloco a xícara na mesa: 1S MESA XÍCARA_COLOCAR
+
+Verbos com sufixo
+Eu não quero: 1s QUERER_NÃO
+Ele não gosta: 3s GOSTAR_NÂO
+
+Verbos com infixo
+Eu não entendo: 1s ENTENDER_NÂO
+Ela não pode: 3s PODER_NÂO
+
+Verbos sem flexão
+Eu compro o carro: 1s COMPRAR CARRO
+ELa gosta de mim: 3s GOSTAR 1s
+
+Genero masculino e feminino
