@@ -35,6 +35,7 @@ Token.set_extension("eh_corresponde", default=False)
 #
 Token.set_extension("metaDados", default={
     "palavra": None,
+    "conjug_genero": None,
     # Atributo para dizer se o sistema deve substituir os espaços vazios por '-' ou não linkavel (ehLinkavel == True: o sistema substitui)
     "ehLinkavel": True,
     "claseGramatical": None,

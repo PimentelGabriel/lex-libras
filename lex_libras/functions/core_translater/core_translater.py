@@ -89,6 +89,7 @@ class CoreTranslater:
             for token in Doc:
                 if palavra['palavra'] == token._.metaDados['palavra']:
                     token._.metaDados['existeSinalLibras'] = True
+                    token._.metaDados['conjug_genero'] = palavra['conjug_genero']
                     token._.metaDados['claseGramatical'] = palavra['flag']
 
         # FAZENDO DATILOLOGIA

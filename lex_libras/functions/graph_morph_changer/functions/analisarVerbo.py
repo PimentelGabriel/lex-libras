@@ -122,8 +122,18 @@ def analisarVerbo(token, Doc):
         token._.metaDados["palavra"] = palavraGlosa
 
     if token._.metaDados["claseGramatical"] == 'VERB-G':
-        raise Exception(
-            'Tratativa para os verbos que são conjugado pelo gênero (VERB-G) não implementado')
+        if token.dep_ == "ROOT":
+            for c in token.children:
+                if c.dep_ == "nsubj":
+                    if c.pos_ in ("NOUN", "PROPN"):
+                        print("Meta dado de "+c.text)
+                        print(c._.metaDados)
+
+                        token._.metaDados["palavra"] = c._.metaDados['conjug_genero']+"_"+token._.metaDados["palavra"]
+                        c._.eh_corresponde = False
+        else:
+            raise Exception(
+                'Tratativa para os verbos que são conjugado pelo gênero (VERB-G) não implementado')
 
     if token._.metaDados["claseGramatical"] == 'VERB-L':
         VERB_L_n_tratado = False
