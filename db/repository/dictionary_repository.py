@@ -51,7 +51,7 @@ class DictionaryRepository:
             print("Palavras a serem pesquisadas no BD:")
             print(f"\n{palavrasCandidatas}")
 
-        query = f'SELECT distinct(p.palavra) as palavra, c.nome, c.flag FROM palavras AS p, classes_gramaticais AS c WHERE p.palavra IN ({palavrasCandidatas}) AND p.classe_gramatical like c.id GROUP BY p.palavra;'
+        query = f'SELECT distinct(p.palavra) as palavra, p.conjug_genero, c.nome, c.flag FROM palavras AS p, classes_gramaticais AS c WHERE p.palavra IN ({palavrasCandidatas}) AND p.classe_gramatical like c.id GROUP BY p.palavra;'
 
         result = None
         with DBConnectionHandler() as conn:
